@@ -3560,6 +3560,10 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
@@ -3625,6 +3629,10 @@ zone_voidframe_zone_DE_amenities = {
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
@@ -3690,6 +3698,10 @@ zone_voidframe_zone_PE_amenities = {
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
@@ -3755,6 +3767,10 @@ zone_voidframe_zone_SE_amenities = {
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
@@ -3822,6 +3838,10 @@ zone_voidframe_zone_DM_amenities_dystopian = {
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
@@ -3887,6 +3907,10 @@ zone_voidframe_zone_DE_amenities_dystopian = {
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
@@ -3952,6 +3976,10 @@ zone_voidframe_zone_PE_amenities_dystopian = {
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
@@ -4017,6 +4045,10 @@ zone_voidframe_zone_SE_amenities_dystopian = {
         building_acot_dm_mansion
         building_stellarite_mansion
         building_phanon_mansion
+        building_fe_sky_dome
+        building_ae_sky_dome
+        building_phanon_sky_dome
+        building_stellarite_sky_dome
 
         #PD
         building_pd_eludium_floating_resort
