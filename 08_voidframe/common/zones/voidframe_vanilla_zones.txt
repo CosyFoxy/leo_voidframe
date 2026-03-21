@@ -481,15 +481,6 @@ zone_voidframe_zone_DE_factory = {
         TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
     }
 
-    inline_script = {
-        script = zones/anz_voidframe_job_p100_or_p300
-        ACOT_JOB_NORM = job_acot_artisan_add
-        ACOT_JOB_GEST = job_acot_artisan_add
-        JOB_NORM = job_artisan_add
-        JOB_GEST = job_artisan_drone_add
-        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
-    }
-
     included_building_sets = {
         factory
         origin
