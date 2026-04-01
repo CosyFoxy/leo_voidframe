@@ -1381,6 +1381,11 @@ phanon_srname_ee: "Runic"
  anz_voidframe.13.desc: "Our Sigma frame is now complete.\n\n§RMake sure to check if you can swap your zones to Sigma variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
  anz_voidframe.13.a: "I will make sure to check my zone swaps."
 
+ # Leo Guardian Defensive Stations
+ voidframe_guardian_upgradable_reminder.title: "Precursor Guardian Designs"
+ voidframe_guardian_upgradable_reminder.desc: "Utilizing Guardian Defensive Stations allows you to design and upgrade the stations yourself.\n\nPlease remember to upgrade the stations if you change the ship design."
+ voidframe_guardian_upgradable_reminder.a: "I understand."
+
 ################################################################################################################
 #other
 
