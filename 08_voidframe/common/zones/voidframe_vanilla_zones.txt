@@ -502,7 +502,7 @@ zone_voidframe_zone_PE_factory = {
 
     inline_script = {
         script = zones/anz_voidframe_pe_zone
-        TECH = "tech_phanon_civilian_factory"
+        TECH = "tech_phanon_factory"
         OTHER_REQ = ""
         OTHER_REQ_PLANET = ""
     }
@@ -556,7 +556,7 @@ zone_voidframe_zone_SE_factory = {
 
     inline_script = {
         script = zones/anz_voidframe_se_zone
-        TECH = "tech_stellarite_civilian_factory"
+        TECH = "tech_stellarite_factory"
         OTHER_REQ = ""
         OTHER_REQ_PLANET = ""
     }
