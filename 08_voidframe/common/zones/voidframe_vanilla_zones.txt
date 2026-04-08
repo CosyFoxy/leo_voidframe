@@ -3359,6 +3359,10 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
         origin
         government
     }
+    include = {
+        building_fe_security_1
+        building_fe_security_2
+    }
 
     zone_sets = {
         anticrime
@@ -3402,6 +3406,11 @@ zone_voidframe_zone_DE_anticrime = {
         origin
         government
     }
+    include = {
+        building_fe_security_1
+        building_fe_security_2
+    }
+
 
     zone_sets = {
         anticrime
@@ -3445,6 +3454,11 @@ zone_voidframe_zone_PE_anticrime = {
         origin
         government
     }
+    include = {
+        building_fe_security_1
+        building_fe_security_2
+    }
+
 
     zone_sets = {
         anticrime
@@ -3483,12 +3497,16 @@ zone_voidframe_zone_SE_anticrime = {
         job_patrol_drone_add = -100
     }
 
-
     included_building_sets = {
         anticrime
         origin
         government
     }
+    include = {
+        building_fe_security_1
+        building_fe_security_2
+    }
+
 
     zone_sets = {
         anticrime

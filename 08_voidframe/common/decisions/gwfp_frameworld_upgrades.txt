@@ -115,11 +115,9 @@ gwfp_build_great_wall = {
 
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = giga_frameworld_upgrade_warning
 		custom_tooltip = gwfp_frameworld_great_wall_effect
 
 		hidden_effect = {
-			set_planet_flag = frameworld_upgrade
 			set_planet_flag = gwfp_great_wall_built
 			solar_system = {
 				spawn_megastructure = {
