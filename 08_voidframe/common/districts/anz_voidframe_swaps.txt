@@ -841,10 +841,10 @@ district_giga_voidframe_refinery_se = {
     }
 }
 
-# SECURITY #todo make an overlay icon
+# SECURITY
 district_giga_voidframe_anticrime_dm = {
     icon = district_giga_voidframe_anticrime_dm
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_crime
     gridbox = district_arcology_leisure
     district_background = district_arcology_leisure
 
@@ -855,7 +855,7 @@ district_giga_voidframe_anticrime_dm = {
 }
 district_giga_voidframe_anticrime_de = {
     icon = district_giga_voidframe_anticrime_de
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_crime
     gridbox = district_arcology_leisure
     district_background = district_arcology_leisure
 
@@ -866,7 +866,7 @@ district_giga_voidframe_anticrime_de = {
 }
 district_giga_voidframe_anticrime_pe = {
     icon = district_giga_voidframe_anticrime_pe
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_crime
     gridbox = district_arcology_leisure
     district_background = district_arcology_leisure
 
@@ -877,7 +877,7 @@ district_giga_voidframe_anticrime_pe = {
 }
 district_giga_voidframe_anticrime_se = {
     icon = district_giga_voidframe_anticrime_se
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_crime
     gridbox = district_arcology_leisure
     district_background = district_arcology_leisure
 
@@ -987,7 +987,7 @@ district_giga_voidframe_amenities_dystopian_se = {
 # SUPERTENSILES
 district_giga_voidframe_supertensiles_dm = {
     icon = district_giga_voidframe_supertensiles_dm
-    #overlay_icon = GFX_district_supertensiles
+    overlay_icon = GFX_giga_district_supertensiles
     gridbox = district_arcology_mixed_industry
     district_background = district_giga_frameworld_supertensiles
 
@@ -998,7 +998,7 @@ district_giga_voidframe_supertensiles_dm = {
 }
 district_giga_voidframe_supertensiles_de = {
     icon = district_giga_voidframe_supertensiles_de
-    #overlay_icon = GFX_district_supertensiles
+    overlay_icon = GFX_giga_district_supertensiles
     gridbox = district_arcology_mixed_industry
     district_background = district_giga_frameworld_supertensiles
 
@@ -1009,7 +1009,7 @@ district_giga_voidframe_supertensiles_de = {
 }
 district_giga_voidframe_supertensiles_pe = {
     icon = district_giga_voidframe_supertensiles_pe
-    #overlay_icon = GFX_district_supertensiles
+    overlay_icon = GFX_giga_district_supertensiles
     gridbox = district_arcology_mixed_industry
     district_background = district_giga_frameworld_supertensiles
 
@@ -1020,7 +1020,7 @@ district_giga_voidframe_supertensiles_pe = {
 }
 district_giga_voidframe_supertensiles_se = {
     icon = district_giga_voidframe_supertensiles_se
-    #overlay_icon = GFX_district_supertensiles
+    overlay_icon = GFX_giga_district_supertensiles
     gridbox = district_arcology_mixed_industry
     district_background = district_giga_frameworld_supertensiles
 
