@@ -415,15 +415,15 @@ zone_voidframe_zone_DM_factory = {
                 is_gestalt = yes
             }
         }
-        job_acot_artisan_add = @scaling_district_1_job #WHY
+        job_acot_artisan_drone_add = @scaling_district_1_job
     }
 
     inline_script = {
         script = zones/anz_voidframe_job_p100_or_p300
         ACOT_JOB_NORM = job_acot_artisan_add
-        ACOT_JOB_GEST = job_acot_artisan_add
+        ACOT_JOB_GEST = job_acot_artisan_drone_add
         JOB_NORM = job_artisan_add
-        JOB_GEST = job_artisan_drone_add
+        JOB_GEST = job_acot_artisan_drone_add
         TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
     }
 
@@ -439,7 +439,7 @@ zone_voidframe_zone_DM_factory = {
     inline_script = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
-} #todo no DM gestalt artisan
+}
 zone_voidframe_zone_DE_factory = {
     icon = GFX_anz_voidframe_zone_DE_CONSUMER_GOODS
 
@@ -602,7 +602,7 @@ zone_voidframe_zone_SE_factory = {
     }
 }
 
-# TRADE (INDIVIDUALIST)
+# TRADE
 zone_voidframe_zone_DM_trade = {
     icon = GFX_anz_voidframe_zone_DM_TRADE
 
