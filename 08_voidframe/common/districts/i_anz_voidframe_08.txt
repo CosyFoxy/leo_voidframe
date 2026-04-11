@@ -398,6 +398,7 @@ district_giga_voidframe_soul = {
     }
 
     potential = {
+        has_voidframe_mods_sots = yes
         uses_district_set = giga_frameworld
         is_voidframe_se = yes
         exists = owner
