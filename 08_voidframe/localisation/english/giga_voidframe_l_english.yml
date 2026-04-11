@@ -1386,6 +1386,11 @@ phanon_srname_ee: "Runic"
  voidframe_guardian_upgradable_reminder.desc: "Utilizing Guardian Defensive Stations allows you to design and upgrade the stations yourself.\n\nPlease remember to upgrade the stations if you change the ship design."
  voidframe_guardian_upgradable_reminder.a: "I understand."
 
+ decision_voidframe_guardian_defensive_station: "Precursor Guardian Defensives"
+ anz_voidframe_guardian_defensive_station_tt_desc: "Replace the Defensive Stations of the Frameworld with Precursor Guardians.\n\n§SReminder:§! These will use your designs and need to be updated manually."
+ anz_voidframe_guardian_defensive_station_tt_effect: "$anz_voidframe_guardian_defensive_station_tt_desc$"
+ anz_voidframe_guardian_upgrade_fail: "Can only upgrade if all Defensive Stations are present. Repair destroyed ones first!"
+
 ################################################################################################################
 #other
 

@@ -76,7 +76,6 @@ decision_voidframe_guardian_defensive_station = {
 
 
     abort_trigger = {
-        NOT = {
             OR = {
                 has_planet_flag = giga_frameworld_defensive_station_1_destroyed
                 has_planet_flag = giga_frameworld_defensive_station_2_destroyed
@@ -85,7 +84,6 @@ decision_voidframe_guardian_defensive_station = {
                 has_planet_flag = giga_frameworld_defensive_station_5_destroyed
                 has_planet_flag = giga_frameworld_defensive_station_6_destroyed
             }
-        }
     }
 
     #EFFECT --------------------------------------------------------------

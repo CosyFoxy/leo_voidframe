@@ -93,17 +93,4 @@ country_event = {
     }
 }
 
-# event for reminding to upgrade ship designs
 
-planet_event = {
-    id = anz_voidframe.14
-    is_triggered_only = yes
-    title = voidframe_guardian_upgradable_reminder.title
-    desc = voidframe_guardian_upgradable_reminder.desc
-    picture = GFX_acot_precursor_oracle
-
-    fire_only_once = yes
-    option = {
-        name = voidframe_guardian_upgradable_reminder.a
-    }
-}
