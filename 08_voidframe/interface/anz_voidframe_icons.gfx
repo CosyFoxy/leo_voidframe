@@ -289,4 +289,46 @@ spriteTypes = {
         name = "GFX_anz_voidframe_zone_TE_AMENITIES"
         texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_AMENITIES.dds"
     }
+
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DM_SENT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_SENT.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DE_SENT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_SENT.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_PE_SENT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_SENT.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_SE_SENT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_SENT.dds"
+    }
+    # spriteType = {
+    #     name = "GFX_anz_voidframe_zone_TE_SENT"
+    #     texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_SENT.dds"
+    # }
+
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DM_NEGEN"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_NEGEN.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DE_NEGEN"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_NEGEN.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_PE_NEGEN"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_NEGEN.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_SE_NEGEN"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_NEGEN.dds"
+    }
+    # spriteType = {
+    #     name = "GFX_anz_voidframe_zone_TE_NEGEN"
+    #     texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_NEGEN.dds"
+    # }
 }

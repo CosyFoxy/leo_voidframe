@@ -4070,8 +4070,310 @@ zone_voidframe_zone_SE_amenities_dystopian = {
 }
 
 # EHOF NEG MASS
+zone_voidframe_zone_DM_negative_mass = {
+    icon = GFX_anz_voidframe_zone_DM_NEGEN
+
+    swap_type = district_giga_voidframe_negative_mass_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_giga_institute_1
+        building_giga_institute_2
+        building_giga_supercomputer_1
+        building_giga_supercomputer_2
+        building_giga_energy_nexus_1
+        building_giga_energy_nexus_2
+        building_giga_energy_nexus_3
+        building_giga_planetary_shield_generator_1
+        building_giga_planetary_shield_generator_2
+        building_negative_mass_factory_1
+        building_negative_mass_factory_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_energy_converters_giga_sr_negative_mass_produces_add = 4
+        planet_energy_converters_sr_dark_matter_upkeep_add = 2
+    }
+
+    zone_sets = {
+        ehof_negative
+    }
+}
+zone_voidframe_zone_DE_negative_mass = {
+    icon = GFX_anz_voidframe_zone_DE_NEGEN
+
+    swap_type = district_giga_voidframe_negative_mass_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_giga_institute_1
+        building_giga_institute_2
+        building_giga_supercomputer_1
+        building_giga_supercomputer_2
+        building_giga_energy_nexus_1
+        building_giga_energy_nexus_2
+        building_giga_energy_nexus_3
+        building_giga_planetary_shield_generator_1
+        building_giga_planetary_shield_generator_2
+        building_negative_mass_factory_1
+        building_negative_mass_factory_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_energy_converters_giga_sr_negative_mass_produces_add = 8
+        planet_energy_converters_sr_dark_matter_upkeep_add = 2
+        planet_energy_converters_acot_sr_dark_energy_upkeep_add = 2
+    }
+
+    zone_sets = {
+        ehof_negative
+    }
+}
+zone_voidframe_zone_PE_negative_mass = {
+    icon = GFX_anz_voidframe_zone_PE_NEGEN
+
+    swap_type = district_giga_voidframe_negative_mass_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_giga_institute_1
+        building_giga_institute_2
+        building_giga_supercomputer_1
+        building_giga_supercomputer_2
+        building_giga_energy_nexus_1
+        building_giga_energy_nexus_2
+        building_giga_energy_nexus_3
+        building_giga_planetary_shield_generator_1
+        building_giga_planetary_shield_generator_2
+        building_negative_mass_factory_1
+        building_negative_mass_factory_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_energy_converters_giga_sr_negative_mass_produces_add = 16
+        planet_energy_converters_aot_sr_runic_power_upkeep_add = 3
+    }
+
+    zone_sets = {
+        ehof_negative
+    }
+}
+zone_voidframe_zone_SE_negative_mass = {
+    icon = GFX_anz_voidframe_zone_SE_NEGEN
+
+    swap_type = district_giga_voidframe_negative_mass_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_giga_institute_1
+        building_giga_institute_2
+        building_giga_supercomputer_1
+        building_giga_supercomputer_2
+        building_giga_energy_nexus_1
+        building_giga_energy_nexus_2
+        building_giga_energy_nexus_3
+        building_giga_planetary_shield_generator_1
+        building_giga_planetary_shield_generator_2
+        building_negative_mass_factory_1
+        building_negative_mass_factory_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_energy_converters_giga_sr_negative_mass_produces_add = 24
+        planet_energy_converters_acot_sr_stellarite_upkeep_add = 5
+    }
+
+    zone_sets = {
+        ehof_negative
+    }
+}
 
 # EHOF SENT METAL
+zone_voidframe_zone_DM_sentient_metal = {
+    icon = GFX_anz_voidframe_zone_DM_SENT
+
+    swap_type = district_giga_voidframe_sentient_metal_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_ehof_sm_forge_1
+        building_ehof_sm_forge_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_cultivators_giga_sr_sentient_metal_produces_add = 4
+        planet_cultivators_sr_dark_matter_upkeep_add = 2
+    }
+
+    zone_sets = {
+        ehof_sentient
+    }
+}
+zone_voidframe_zone_DE_sentient_metal = {
+    icon = GFX_anz_voidframe_zone_DE_SENT
+
+    swap_type = district_giga_voidframe_sentient_metal_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_ehof_sm_forge_1
+        building_ehof_sm_forge_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_cultivators_giga_sr_sentient_metal_produces_add = 8
+        planet_cultivators_sr_dark_matter_upkeep_add = 2
+        planet_cultivators_acot_sr_dark_energy_upkeep_add = 2
+    }
+
+    zone_sets = {
+        ehof_sentient
+    }
+}
+zone_voidframe_zone_PE_sentient_metal = {
+    icon = GFX_anz_voidframe_zone_PE_SENT
+
+    swap_type = district_giga_voidframe_sentient_metal_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_ehof_sm_forge_1
+        building_ehof_sm_forge_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_cultivators_giga_sr_sentient_metal_produces_add = 16
+        planet_cultivators_aot_sr_runic_power_upkeep_add = 3
+    }
+
+    zone_sets = {
+        ehof_sentient
+    }
+}
+zone_voidframe_zone_SE_sentient_metal = {
+    icon = GFX_anz_voidframe_zone_SE_SENT
+
+    swap_type = district_giga_voidframe_sentient_metal_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    include = {
+        building_ehof_sm_forge_1
+        building_ehof_sm_forge_2
+    }
+    included_building_sets = {
+        ehof
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_cultivators_giga_sr_sentient_metal_produces_add = 24
+        planet_cultivators_acot_sr_stellarite_upkeep_add = 5
+    }
+
+    zone_sets = {
+        ehof_sentient
+    }
+}
 
 # SUPERTENSILES
 zone_voidframe_zone_DM_tensiles = {
