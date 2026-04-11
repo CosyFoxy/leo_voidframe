@@ -34,6 +34,7 @@ anz_voidframe_spawn_guardian_defensive_station = {
             create_ship = {
                 name = random
                 random_existing_design = precursor_guardian
+                upgradable = yes
                 #THIS DESIGN IS UPGRADABLE, PERHAPS MAKE AN AUTO-UPGRADE ONE?
                 #ALTHOUGH THIS LETS PEOPLE SET THE DIFFERENT SECTIONS, BUT REPAIR WONT BE ADJUSTED ACCORDINGLY
                 #FIX THIS THROUGH TRIGGERED DECISION COST?
