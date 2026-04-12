@@ -8,7 +8,7 @@ DDS_DIR = "./cvt/" # makes copies overwrite if found
 
 # Using texconv utility from: https://github.com/microsoft/DirectXTex
 TEXCONV_PATH = "E:/soft/utils/texconv.exe"
-PREFIX = "district_xhk_"
+PREFIX = "district_"
 
 # rename string - must be same size as each other
 RENAME_FROM = []
@@ -19,6 +19,7 @@ exit()
 
 pngDir = Path(PNG_DIR)
 
+print()
 print("> Renaming PNGs\n")
 
 for file in pngDir.iterdir():
@@ -27,16 +28,13 @@ for file in pngDir.iterdir():
 
     if not orgExt == ".png":
         continue
-
-    if not orgName.find(PREFIX):
-        continue
     
     if orgName.endswith("_1"):
         orgNameTrunc = orgName.replace("_1", "")
-        newSuffix = "_se"
+        newSuffix = "_pe"
     elif orgName.endswith("_2"):
         orgNameTrunc = orgName.replace("_2", "")
-        newSuffix = "_pe"
+        newSuffix = "_se"
     elif orgName.endswith("_3"):
         orgNameTrunc = orgName.replace("_3", "")
         newSuffix = "_te"

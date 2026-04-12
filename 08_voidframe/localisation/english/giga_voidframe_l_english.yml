@@ -941,6 +941,59 @@ phanon_srname_ee: "Runic"
   # district_giga_voidframe_supertensiles_oe_plural: "§YLight Supertensiles§!"
   # district_giga_voidframe_supertensiles_oe_desc: "§Ytemp desc, too lazy to write§!"
 
+
+ # negative_mass
+
+ district_giga_voidframe_negative_mass_dm: "Enigmatic Negative Sieve"
+ district_giga_voidframe_negative_mass_dm_plural: "Enigmatic Negative Sieves"
+ district_giga_voidframe_negative_mass_dm_desc: "A strange construction, impregnating the sieves with dark matter improves their ability to sift negative energy out of the void."
+ zone_voidframe_zone_DM_negative_mass: "Void Sifter"
+ zone_voidframe_zone_DM_negative_mass_desc: "$district_giga_voidframe_negative_mass_dm_desc$"
+
+ district_giga_voidframe_negative_mass_de: "Null Extraction Ward"
+ district_giga_voidframe_negative_mass_de_plural: "Null Extraction Wards"
+ district_giga_voidframe_negative_mass_de_desc: "Dark flux is an advanced form of negative energy that is not well understood, but is created with negative energy and dark energy. It tends to attract more of its kind."
+ zone_voidframe_zone_DE_negative_mass: "Dark Flux Extractor"
+ zone_voidframe_zone_DE_negative_mass_desc: "$district_giga_voidframe_negative_mass_de_desc$"
+
+ district_giga_voidframe_negative_mass_pe: "§R$phanon_srname_ee$ Sieve§!"
+ district_giga_voidframe_negative_mass_pe_plural: "§R$phanon_srname_ee$ Sieves§!"
+ district_giga_voidframe_negative_mass_pe_desc: "$phanon_classified$"
+ zone_voidframe_zone_PE_negative_mass: "Abyssal Extraction Manifold"
+ zone_voidframe_zone_PE_negative_mass_desc: "$district_giga_voidframe_negative_mass_pe_desc$"
+
+ district_giga_voidframe_negative_mass_se: "§HPrimordial Negation Engine§!"
+ district_giga_voidframe_negative_mass_se_plural: "§HPrimordial Negation Engines§!"
+ district_giga_voidframe_negative_mass_se_desc: "§HTap into the energy fields that dominated the primordial soup, and you shall be rewarded!§!"
+ zone_voidframe_zone_SE_negative_mass: "Infinite Recursion Sieve"
+ zone_voidframe_zone_SE_negative_mass_desc: "$district_giga_voidframe_negative_mass_se_desc$"
+
+ # sentient_metal
+
+ district_giga_voidframe_sentient_metal_dm: "Awakened Forge"
+ district_giga_voidframe_sentient_metal_dm_plural: "Awakened Forges"
+ district_giga_voidframe_sentient_metal_dm_desc: "The metal grows smarter with every infusion of dark matter."
+ zone_voidframe_zone_DM_sentient_metal: "Reactive Furnaces"
+ zone_voidframe_zone_DM_sentient_metal_desc: "$district_giga_voidframe_sentient_metal_dm_desc$"
+
+ district_giga_voidframe_sentient_metal_de: "Mindbound Foundry"
+ district_giga_voidframe_sentient_metal_de_plural: "Mindbound Foundries"
+ district_giga_voidframe_sentient_metal_de_desc: "Dark energy infusions increase the instinctual intellectual ability of the metal, to frightening levels."
+ zone_voidframe_zone_DE_sentient_metal: "Noetic Forges"
+ zone_voidframe_zone_DE_sentient_metal_desc: "$district_giga_voidframe_sentient_metal_de_desc$"
+
+ district_giga_voidframe_sentient_metal_pe: "§RPhanon-Trademark Engine§!"
+ district_giga_voidframe_sentient_metal_pe_plural: "§RPhanon-Trademark Engines§!"
+ district_giga_voidframe_sentient_metal_pe_desc: "$phanon_classified$"
+ zone_voidframe_zone_PE_sentient_metal: "Retroactive Casters"
+ zone_voidframe_zone_PE_sentient_metal_desc: "$district_giga_voidframe_sentient_metal_pe_desc$"
+
+ district_giga_voidframe_sentient_metal_se: "§HNoetic Fabrication District§!"
+ district_giga_voidframe_sentient_metal_se_plural: "§HNoetic Fabrication Districts§!"
+ district_giga_voidframe_sentient_metal_se_desc: "§HWe forge more than metal, here we forge the mind.§!"
+ zone_voidframe_zone_SE_sentient_metal: "Axiom Imprinters"
+ zone_voidframe_zone_SE_sentient_metal_desc: "$district_giga_voidframe_sentient_metal_se_desc$"
+
 #########################################################################################
 # defensive
 
