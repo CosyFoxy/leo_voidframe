@@ -19,6 +19,7 @@
 
 ########################################################
 
+
 decision_voidframe_guardian_defensive_station = {
     owned_planets_only = yes
     icon = decision_acot_gigafortress_deploy
@@ -76,19 +77,18 @@ decision_voidframe_guardian_defensive_station = {
 
 
     abort_trigger = {
-            OR = {
-                has_planet_flag = giga_frameworld_defensive_station_1_destroyed
-                has_planet_flag = giga_frameworld_defensive_station_2_destroyed
-                has_planet_flag = giga_frameworld_defensive_station_3_destroyed
-                has_planet_flag = giga_frameworld_defensive_station_4_destroyed
-                has_planet_flag = giga_frameworld_defensive_station_5_destroyed
-                has_planet_flag = giga_frameworld_defensive_station_6_destroyed
-            }
+        OR = {
+            has_planet_flag = giga_frameworld_defensive_station_1_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_2_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_3_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_4_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_5_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_6_destroyed
+        }
     }
 
     #EFFECT --------------------------------------------------------------
     effect = {
-        custom_tooltip = anz_voidframe_guardian_defensive_station_tt_desc
         custom_tooltip = anz_voidframe_guardian_defensive_station_tt_effect
 
         hidden_effect = {
@@ -108,6 +108,115 @@ decision_voidframe_guardian_defensive_station = {
                 set_planet_flag = guardian_defensive_station_maginot
                 anz_voidframe_spawn_maginot_guardian_defensive_station = { WHO = owner }
             }
+        }
+    }
+    ai_weight = {
+        weight = @weight_base
+
+
+        # more if we've got a lot of dark energy
+        modifier = {
+            factor = @weight_sr_dark_energy
+            exists = owner
+            owner = {
+                has_resource = {
+                    type = acot_sr_dark_energy
+                    amount > @dark_energy_threshold
+                }
+            }
+        }
+
+        # more if we're at war
+        modifier = {
+            factor = @weight_war
+            exists = owner
+            owner = {
+                is_at_war = yes
+            }
+        }
+    }
+}
+
+decision_voidframe_guardian_maginot_retrofit_defensive_station = {
+    owned_planets_only = yes
+    icon = decision_acot_gigafortress_deploy
+
+    #COSTS -------------------------------------------------------------
+    enactment_time = @guardian_time
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = @guardian_alloy_cost
+            acot_sr_dark_energy = @guardian_sr_de_cost
+            sr_dark_matter = @guardian_sr_dm_cost
+        }
+    }
+
+    #TECH --------------------------------------------------------------
+    prerequisites = {
+        tech_precursor_guardian
+    }
+
+    show_tech_unlock_if = {
+        has_voidframe_mods_acot = yes
+        owner = { giga_has_frameworld_origin = yes }
+        has_technology = giga_tech_maginot_world
+    }
+
+    #POTENTIAL ----------------------------------------------------------
+    potential = {
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+        }
+        is_planet_class = pc_giga_frameworld
+        has_voidframe_mods_acot = yes
+        is_voidframe_upgraded = yes
+        has_planet_flag = guardian_defensive_station
+        NOT = { has_planet_flag = guardian_defensive_station_maginot }
+    }
+
+    #ALLOW --------------------------------------------------------------
+    allow = {
+        custom_tooltip_fail = {
+            not = {
+                OR = {
+                    has_planet_flag = giga_frameworld_defensive_station_1_destroyed
+                    has_planet_flag = giga_frameworld_defensive_station_2_destroyed
+                    has_planet_flag = giga_frameworld_defensive_station_3_destroyed
+                    has_planet_flag = giga_frameworld_defensive_station_4_destroyed
+                    has_planet_flag = giga_frameworld_defensive_station_5_destroyed
+                    has_planet_flag = giga_frameworld_defensive_station_6_destroyed
+                }
+            }
+            text = anz_voidframe_guardian_upgrade_fail
+        }
+        has_enigmatic_capital = yes
+    }
+
+
+    abort_trigger = {
+        OR = {
+            has_planet_flag = giga_frameworld_defensive_station_1_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_2_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_3_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_4_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_5_destroyed
+            has_planet_flag = giga_frameworld_defensive_station_6_destroyed
+        }
+    }
+
+    #EFFECT --------------------------------------------------------------
+    effect = {
+        custom_tooltip = anz_voidframe_guardian_defensive_station_maginot_tt_effect
+
+        hidden_effect = {
+            set_planet_flag = guardian_defensive_station_maginot
+            #For this, the decisions to repair defensive stations should be disallowed once guardian defensives are installed
+            #Otherwise, repairing destroyed stations will respawn normal stations
+
+            anz_voidframe_destroy_old_defensive_stations = yes
+            anz_voidframe_spawn_maginot_guardian_defensive_station = { WHO = owner }
         }
     }
     ai_weight = {

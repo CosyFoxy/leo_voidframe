@@ -14,3 +14,36 @@ planet_event = {
         name = voidframe_guardian_upgradable_reminder.a
     }
 }
+
+country_event = {
+    id = anz_voidframe.15
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        AND = {
+            giga_has_frameworld_origin = yes
+            exists = capital_scope
+            capital_scope = {
+                has_planet_flag = guardian_defensive_station
+            }
+            any_controlled_fleet = {
+                has_fleet_flag = voidframe_guardian_defensive_station
+            }
+        }
+    }
+
+    immediate = {
+        capital_scope = {
+            this.solar_system = {
+                every_ship_in_system = {
+                    limit = {
+                        has_ship_flag = voidframe_guardian_defensive_station
+                    }
+                    set_ship_design = { random_existing_design = precursor_guardian }
+                }
+            }
+        }
+    }
+}
+
