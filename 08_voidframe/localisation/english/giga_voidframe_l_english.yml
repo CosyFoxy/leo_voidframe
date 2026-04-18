@@ -8,6 +8,8 @@ phanon_classified_nocolor: "---CLASSIFIED---"
 phanon_srname_ee: "Runic"
 #phanon_srname_ee: "Mystic"
 
+  anz_voidframe_vault_nerf: "Voidframe Vault Nerf"
+  anz_voidframe_vault_nerf_desc: "We may come here to loot their decrepit vaults and pry their technology out of their cold hands, but this will never be our home. For that is the Frame."
 # layout for copy-pasata
 #
 # _dm: ""
