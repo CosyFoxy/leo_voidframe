@@ -92,3 +92,48 @@ country_event = {
         name = anz_voidframe.13.a
     }
 }
+
+# nerfs the phanon vault
+country_event = {
+    id = anz_voidframe.100
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        giga_has_frameworld_origin = yes
+        fromfrom = {
+            OR = {
+                is_planet_class = pc_acot_pmc_vault
+                is_planet_class = pc_acot_pmc_vault_unshielded
+            }
+            NOT = { has_modifier = anz_voidframe_vault_nerf }
+        }
+    }
+
+    immediate = {
+        fromfrom = {
+            add_modifier = { modifier = anz_voidframe_vault_nerf months = -1 }
+        }
+    }
+}
+# unnerfs the vault
+planet_event = {
+    id = anz_voidframe.101
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        from = {
+            giga_has_frameworld_origin = no
+        }
+        OR = {
+            is_planet_class = pc_acot_pmc_vault
+            is_planet_class = pc_acot_pmc_vault_unshielded
+        }
+        has_modifier = anz_voidframe_vault_nerf
+    }
+
+    immediate = {
+        remove_modifier = anz_voidframe_vault_nerf
+    }
+}

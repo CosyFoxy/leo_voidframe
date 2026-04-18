@@ -4,3 +4,15 @@ on_game_start = {
 		anz_voidframe.0
 	}
 }
+
+on_planet_attackers_win = {
+    events = {
+        anz_voidframe.100
+    }
+}
+
+on_planet_transfer = {
+    events = {
+        anz_voidframe.101
+    }
+}
