@@ -937,3 +937,8 @@ zone_xhk_voidframe_mbrain_se = {
         building_giga_matrioshka_brain_uplink_country_max = 0.25
     }
 }
+
+# missing
+# lava
+# necrophage
+# cultobrium

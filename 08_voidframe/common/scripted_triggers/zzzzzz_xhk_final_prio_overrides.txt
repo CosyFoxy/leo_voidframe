@@ -3,5 +3,8 @@ giga_is_excluded_from_frameworld_resettlement = {
         is_planet_class = pc_cosmogenesis_world
         has_planet_flag = giga_excluded_frameworld_resettlement
         frameag_colony_exception = yes
+        # ancient empires
+        is_planet_class = pc_acot_pmc_vault
+        is_planet_class = pc_acot_pmc_vault_unshielded
     }
 }
