@@ -276,7 +276,7 @@ inline_script = {
 }
 
 inline_script = {
-    script = guardian_defensives/guardian_repair_cost
+    script = guardian_defensives/guardian_repair
     ID = 6
 }
 
