@@ -31,9 +31,9 @@ frameag_building_limit = {
 }
 
 anz_voidframe_vault_nerf = {
-	planet_max_districts_add = -9999
-	planet_jobs_produces_mult = -100
+    planet_max_districts_add = -9999
+    planet_jobs_produces_mult = -100
 
-	icon = "gfx/interface/icons/planet_modifiers/acot_modifier_automated_building.dds"
-	icon_frame = 1
+    icon = "gfx/interface/icons/planet_modifiers/acot_modifier_automated_building.dds"
+    icon_frame = 1
 }

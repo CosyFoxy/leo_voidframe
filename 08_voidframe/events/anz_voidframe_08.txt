@@ -137,4 +137,3 @@ planet_event = {
         remove_modifier = anz_voidframe_vault_nerf
     }
 }
-
