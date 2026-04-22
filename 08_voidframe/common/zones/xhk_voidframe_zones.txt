@@ -323,7 +323,7 @@ zone_xhk_voidframe_knight_de = {
         potential = {
             always = yes
         }
-        job_delta_knight_add = 200
+        job_alpha_knight_add = 200
     }
 }
 zone_xhk_voidframe_knight_pe = {
@@ -355,7 +355,7 @@ zone_xhk_voidframe_knight_pe = {
         potential = {
             always = yes
         }
-        job_delta_knight_add = 200
+        job_phanon_knight_add = 200
     }
 }
 zone_xhk_voidframe_knight_se = {
@@ -387,7 +387,7 @@ zone_xhk_voidframe_knight_se = {
         potential = {
             always = yes
         }
-        job_delta_knight_add = 200
+        job_stellarite_knight_add = 200
     }
 }
 
