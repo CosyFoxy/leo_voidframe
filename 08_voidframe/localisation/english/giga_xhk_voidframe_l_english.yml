@@ -155,3 +155,33 @@
  zone_xhk_voidframe_mbrain_se: "N-Space Void Processors"
  zone_xhk_voidframe_mbrain_se_desc: "$district_xhk_voidframe_mbrain_se_desc$"
  zone_xhk_voidframe_mbrain_se_subtitle: "$zone_xhk_voidframe_mbrain_se$"
+
+ ######## NECROFRAME
+ ############################################################################################
+ district_xhk_voidframe_necroframe_dm: "Shadow Chamber"
+ district_xhk_voidframe_necroframe_dm_plural: "Shadow Chambers"
+ district_xhk_voidframe_necroframe_dm_desc: "A sprinkling of dark matter helps increase the rate of conversion to our glorious species, whether through transformation rituals or better parasiting."
+ zone_xhk_voidframe_necroframe_dm: "$district_xhk_voidframe_necroframe_dm$"
+ zone_xhk_voidframe_necroframe_dm_desc: "$district_xhk_voidframe_necroframe_dm_desc$"
+ zone_xhk_voidframe_necroframe_dm_subtitle: "Delta Sublimation"
+
+ district_xhk_voidframe_necroframe_de: "Enigmatic Chambers"
+ district_xhk_voidframe_necroframe_de_plural: "Enigmatic Chambers"
+ district_xhk_voidframe_necroframe_de_desc: "The peak experience of having yourself being reassembled into a better form in real time."
+ zone_xhk_voidframe_necroframe_de: "$district_xhk_voidframe_necroframe_de$"
+ zone_xhk_voidframe_necroframe_de_desc: "$district_xhk_voidframe_necroframe_de_desc$"
+ zone_xhk_voidframe_necroframe_de_subtitle: "Alpha Sublimation"
+
+ district_xhk_voidframe_necroframe_pe: "§RPhanon Conversion Vault§!"
+ district_xhk_voidframe_necroframe_pe_plural: "§RPhanon Conversion Vaults§!"
+ district_xhk_voidframe_necroframe_pe_desc: "$phanon_classified$"
+ zone_xhk_voidframe_necroframe_pe: "$district_xhk_voidframe_necroframe_pe$"
+ zone_xhk_voidframe_necroframe_pe_desc: "$district_xhk_voidframe_necroframe_pe_desc$"
+ zone_xhk_voidframe_necroframe_pe_subtitle: "Runic Absorption"
+
+ district_xhk_voidframe_necroframe_se: "§HAstral Exaltation Chamber§!"
+ district_xhk_voidframe_necroframe_se_plural: "§HAstral Exaltation Chambers§!"
+ district_xhk_voidframe_necroframe_se_desc: "§HBathed in raw stellarite, these converts shall know the true majesty of our species!§!"
+ zone_xhk_voidframe_necroframe_se: "$district_xhk_voidframe_necroframe_se$"
+ zone_xhk_voidframe_necroframe_se_desc: "$district_xhk_voidframe_necroframe_se_desc$"
+ zone_xhk_voidframe_necroframe_se_subtitle: "Celestial Sublimation"
