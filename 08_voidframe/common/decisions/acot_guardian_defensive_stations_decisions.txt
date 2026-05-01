@@ -173,6 +173,7 @@ decision_voidframe_guardian_maginot_retrofit_defensive_station = {
         has_voidframe_mods_acot = yes
         is_voidframe_upgraded = yes
         has_planet_flag = guardian_defensive_station
+        has_planet_flag = frameworld_maginot
         NOT = { has_planet_flag = guardian_defensive_station_maginot }
     }
 
