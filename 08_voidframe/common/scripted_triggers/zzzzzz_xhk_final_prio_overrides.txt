@@ -8,3 +8,42 @@ giga_is_excluded_from_frameworld_resettlement = {
         is_planet_class = pc_acot_pmc_vault_unshielded
     }
 }
+
+
+has_acot_knight_zone = {
+    OR = {
+        has_zone = { zone = zone_xhk_acot_knights_dm }
+        has_zone = { zone = zone_xhk_acot_knights_de }
+        has_zone = { zone = zone_xhk_acot_knights_pe }
+        has_zone = { zone = zone_xhk_acot_knights_se }
+        has_zone = { zone = zone_xhk_voidframe_knight_dm}
+        has_zone = { zone = zone_xhk_voidframe_knight_de}
+        has_zone = { zone = zone_xhk_voidframe_knight_pe}
+        has_zone = { zone = zone_xhk_voidframe_knight_se}
+    }
+}
+
+has_acot_knight_delta_zone = {
+    OR = {
+        has_zone = { zone = zone_xhk_acot_knights_dm }
+        has_zone = { zone = zone_xhk_voidframe_knight_dm}
+    }
+}
+has_acot_knight_alpha_zone = {
+    OR = {
+        has_zone = { zone = zone_xhk_acot_knights_de }
+        has_zone = { zone = zone_xhk_voidframe_knight_de}
+    }
+}
+has_acot_knight_phanon_zone = {
+    OR = {
+        has_zone = { zone = zone_xhk_acot_knights_pe }
+        has_zone = { zone = zone_xhk_voidframe_knight_pe}
+    }
+}
+has_acot_knight_stellarite_zone = {
+    OR = {
+        has_zone = { zone = zone_xhk_acot_knights_se }
+        has_zone = { zone = zone_xhk_voidframe_knight_se}
+    }
+}

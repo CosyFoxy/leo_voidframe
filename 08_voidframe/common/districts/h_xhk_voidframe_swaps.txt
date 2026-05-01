@@ -272,5 +272,52 @@ district_xhk_voidframe_mbrain_se = {
     }
 }
 
+### necro
+district_xhk_voidframe_necroframe_dm = {
+    icon = district_xhk_voidframe_necroframe_dm
+    overlay_icon = GFX_district_amenities
+    gridbox = district_arcology_research
+    district_background = district_arcology_research
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_necroframe_dm_subtitle
+    }
+}
+district_xhk_voidframe_necroframe_de = {
+    icon = district_xhk_voidframe_necroframe_de
+    overlay_icon = GFX_district_amenities
+    gridbox = district_arcology_research
+    district_background = district_arcology_research
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_necroframe_de_subtitle
+    }
+}
+district_xhk_voidframe_necroframe_pe = {
+    icon = district_xhk_voidframe_necroframe_pe
+    overlay_icon = GFX_district_amenities
+    gridbox = district_arcology_research
+    district_background = district_arcology_research
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_necroframe_pe_subtitle
+    }
+}
+district_xhk_voidframe_necroframe_se = {
+    icon = district_xhk_voidframe_necroframe_se
+    overlay_icon = GFX_district_amenities
+    gridbox = district_arcology_research
+    district_background = district_arcology_research
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_necroframe_se_subtitle
+    }
+}
+
+
 ## TODO
-# cultobrium, necro, lava
+# cultobrium, lava

@@ -1,0 +1,8 @@
+﻿l_german:
+  mod_planet_energy_converters_acot_sr_dark_energy_upkeep_add:99 "£acot_sr_dark_energy£ $upkeep_per_pop_group_unit$ $giga_planet_energy_converters_mod_suffix$"
+  mod_planet_energy_converters_aot_sr_runic_power_upkeep_add:99 "£aot_sr_runic_power£ $upkeep_per_pop_group_unit$ $giga_planet_energy_converters_mod_suffix$"
+  mod_planet_energy_converters_acot_sr_stellarite_upkeep_add:99 "£acot_sr_stellarite£ $upkeep_per_pop_group_unit$ $giga_planet_energy_converters_mod_suffix$"
+  
+  mod_planet_cultivators_acot_sr_dark_energy_upkeep_add:99 "£acot_sr_dark_energy£ $upkeep_per_pop_group_unit$ $giga_planet_cultivators_mod_suffix$"
+  mod_planet_cultivators_aot_sr_runic_power_upkeep_add:99 "£aot_sr_runic_power£ $upkeep_per_pop_group_unit$ $giga_planet_cultivators_mod_suffix$"
+  mod_planet_cultivators_acot_sr_stellarite_upkeep_add:99 "£acot_sr_stellarite£ $upkeep_per_pop_group_unit$ $giga_planet_cultivators_mod_suffix$"

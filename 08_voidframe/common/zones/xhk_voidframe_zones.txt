@@ -323,7 +323,7 @@ zone_xhk_voidframe_knight_de = {
         potential = {
             always = yes
         }
-        job_delta_knight_add = 200
+        job_alpha_knight_add = 200
     }
 }
 zone_xhk_voidframe_knight_pe = {
@@ -355,7 +355,7 @@ zone_xhk_voidframe_knight_pe = {
         potential = {
             always = yes
         }
-        job_delta_knight_add = 200
+        job_phanon_knight_add = 200
     }
 }
 zone_xhk_voidframe_knight_se = {
@@ -387,7 +387,7 @@ zone_xhk_voidframe_knight_se = {
         potential = {
             always = yes
         }
-        job_delta_knight_add = 200
+        job_stellarite_knight_add = 200
     }
 }
 
@@ -938,7 +938,179 @@ zone_xhk_voidframe_mbrain_se = {
     }
 }
 
+# necrophage
+zone_xhk_voidframe_necroframe_dm = {
+    icon = GFX_anz_voidframe_zone_DM_UNITY
+
+    swap_type = district_xhk_voidframe_necroframe_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        #  since we want to make sure that gestalts and individualists can use it (they have diff techs)
+        script = zones/anz_voidframe_dm_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    zone_sets = {
+        extraframe_necrophage
+    }
+
+    included_building_sets = {
+        necrophage
+    }
+    include = {
+        building_necrophage_elevation_chamber
+        building_necrophage_house_of_apotheosis
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = decision_origins_necrophage }
+        }
+        job_necro_apprentice_add = 400
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_advanced_hive
+            owner = {
+                has_country_flag = decision_origins_necrophage
+                is_hive_empire = yes
+            }
+        }
+        job_necro_apprentice_add = 200
+    }
+}
+zone_xhk_voidframe_necroframe_de = {
+    icon = GFX_anz_voidframe_zone_DE_UNITY
+
+    swap_type = district_xhk_voidframe_necroframe_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    zone_sets = {
+        extraframe_necrophage
+    }
+
+    included_building_sets = {
+        necrophage
+    }
+    include = {
+        building_necrophage_elevation_chamber
+        building_necrophage_house_of_apotheosis
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = decision_origins_necrophage }
+        }
+        job_necro_apprentice_add = 600
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_advanced_hive
+            owner = {
+                has_country_flag = decision_origins_necrophage
+                is_hive_empire = yes
+            }
+        }
+        job_necro_apprentice_add = 300
+    }
+}
+zone_xhk_voidframe_necroframe_pe = {
+    icon = GFX_anz_voidframe_zone_PE_UNITY
+
+    swap_type = district_xhk_voidframe_necroframe_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    zone_sets = {
+        extraframe_necrophage
+    }
+
+    included_building_sets = {
+        necrophage
+    }
+    include = {
+        building_necrophage_elevation_chamber
+        building_necrophage_house_of_apotheosis
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = decision_origins_necrophage }
+        }
+        job_necro_apprentice_add = 1000
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_advanced_hive
+            owner = {
+                has_country_flag = decision_origins_necrophage
+                is_hive_empire = yes
+            }
+        }
+        job_necro_apprentice_add = 400
+    }
+
+}
+zone_xhk_voidframe_necroframe_se = {
+    icon = GFX_anz_voidframe_zone_SE_UNITY
+
+    swap_type = district_xhk_voidframe_necroframe_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    zone_sets = {
+        extraframe_necrophage
+    }
+
+    included_building_sets = {
+        necrophage
+    }
+    include = {
+        building_necrophage_elevation_chamber
+        building_necrophage_house_of_apotheosis
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = decision_origins_necrophage }
+        }
+        job_necro_apprentice_add = 1500
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_advanced_hive
+            owner = {
+                has_country_flag = decision_origins_necrophage
+                is_hive_empire = yes
+            }
+        }
+        job_necro_apprentice_add = 600
+    }
+
+}
+
 # missing
 # lava
-# necrophage
 # cultobrium
