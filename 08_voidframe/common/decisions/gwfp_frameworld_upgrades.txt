@@ -27,14 +27,14 @@ gwfp_infuse_black_hole = {
 		}
 		is_planet_class = pc_giga_frameworld
 		not = {
-			has_planet_flag = frameworld_infused_black_hole
+			has_carrier_flag = frameworld_infused_black_hole
 		}
 	}
 	
 	allow = {
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -47,7 +47,7 @@ gwfp_infuse_black_hole = {
 
 		hidden_effect = {
 
-			set_planet_flag = frameworld_infused_black_hole
+			set_carrier_flag = frameworld_infused_black_hole
 			planet = { add_deposit = d_gwfp_phanon_black_hole }
 			
 			solar_system = {
@@ -98,16 +98,16 @@ gwfp_build_great_wall = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		has_planet_flag = frameworld_infused_black_hole
+		has_carrier_flag = frameworld_infused_black_hole
 		NOT = {
-			has_planet_flag = gwfp_great_wall_built
+			has_carrier_flag = gwfp_great_wall_built
 		}
 	}
 
 	allow = {
 		custom_tooltip_fail = {
 			NOT = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -118,7 +118,7 @@ gwfp_build_great_wall = {
 		custom_tooltip = gwfp_frameworld_great_wall_effect
 
 		hidden_effect = {
-			set_planet_flag = gwfp_great_wall_built
+			set_carrier_flag = gwfp_great_wall_built
 			solar_system = {
 				spawn_megastructure = {
 					type = phanon_great_wall_0

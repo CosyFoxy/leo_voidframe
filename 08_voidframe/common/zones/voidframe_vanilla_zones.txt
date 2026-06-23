@@ -851,7 +851,7 @@ zone_voidframe_zone_DM_generator = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -906,7 +906,7 @@ zone_voidframe_zone_DE_generator = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -961,7 +961,7 @@ zone_voidframe_zone_PE_generator = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -1016,7 +1016,7 @@ zone_voidframe_zone_SE_generator = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -1073,7 +1073,7 @@ zone_voidframe_zone_DM_penrose = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1128,7 +1128,7 @@ zone_voidframe_zone_DE_penrose = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1183,7 +1183,7 @@ zone_voidframe_zone_PE_penrose = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1238,7 +1238,7 @@ zone_voidframe_zone_SE_penrose = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1295,7 +1295,7 @@ zone_voidframe_zone_DM_mining = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1350,7 +1350,7 @@ zone_voidframe_zone_DE_mining = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1406,7 +1406,7 @@ zone_voidframe_zone_PE_mining = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1462,7 +1462,7 @@ zone_voidframe_zone_SE_mining = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1520,7 +1520,7 @@ zone_voidframe_zone_DM_decompressor = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {
@@ -1576,7 +1576,7 @@ zone_voidframe_zone_DE_decompressor = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {
@@ -1632,7 +1632,7 @@ zone_voidframe_zone_PE_decompressor = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {
@@ -1688,7 +1688,7 @@ zone_voidframe_zone_SE_decompressor = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {

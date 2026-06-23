@@ -33,22 +33,22 @@ anz_voidframe_enigmatic = {
 		is_voidframe_upgraded = no
 	}
 	
-	allow = {		
+	allow = {
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
 		has_enigmatic_capital = yes
 	}
-	
+
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = anz_voidframe_enigmatic_effect
 
 		hidden_effect = {
-			set_planet_flag = voidframe_enigmatic
+			set_carrier_flag = voidframe_enigmatic
 			add_deposit = anz_voidframe_delta_deposit
 
 			add_modifier = {
@@ -66,7 +66,7 @@ anz_voidframe_enigmatic = {
             from = { country_event = { id = anz_voidframe.10 }}
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 10
 	}
@@ -85,7 +85,7 @@ anz_voidframe_enigmatic_ae = {
 	}
 
 	enactment_time = 1800 # 5 years
-	
+
 	resources = {
 		category = megastructures
 		cost = {
@@ -94,7 +94,7 @@ anz_voidframe_enigmatic_ae = {
 			acot_sr_dark_energy = 10000
 		}
 	}
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -103,23 +103,23 @@ anz_voidframe_enigmatic_ae = {
 		is_planet_class = pc_giga_frameworld
 		is_voidframe_exclusive_dm = yes
 	}
-	
+
 	allow = {
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
 		has_ascended_capital = yes
 	}
-	
+
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = anz_voidframe_enigmatic_ae_effect
 
 		hidden_effect = {
-			set_planet_flag = voidframe_enigmatic_ae
+			set_carrier_flag = voidframe_enigmatic_ae
 			add_deposit = anz_voidframe_alpha_deposit
 			remove_deposit = anz_voidframe_delta_deposit
 
@@ -128,7 +128,7 @@ anz_voidframe_enigmatic_ae = {
             from = { country_event = { id = anz_voidframe.11 }}
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 10
 	}
@@ -147,7 +147,7 @@ anz_voidframe_phanon = {
 	}
 
 	enactment_time = 1800 # 5 years
-	
+
 	resources = {
 		category = megastructures
 		cost = {
@@ -155,7 +155,7 @@ anz_voidframe_phanon = {
 			aot_sr_runic_power = 20000
 		}
 	}
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -165,23 +165,23 @@ anz_voidframe_phanon = {
 		is_voidframe_exclusive_de = yes
 		has_voidframe_mods_aot = yes
 	}
-	
+
 	allow = {
 		has_phanon_capital = yes
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
 	}
-	
+
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = anz_voidframe_phanon_effect
 
 		hidden_effect = {
-			set_planet_flag = voidframe_phanon
+			set_carrier_flag = voidframe_phanon
 			add_deposit = anz_voidframe_phanon_deposit
 			remove_deposit = anz_voidframe_alpha_deposit
 
@@ -190,7 +190,7 @@ anz_voidframe_phanon = {
             from = { country_event = { id = anz_voidframe.12 }}
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 10
 	}
@@ -209,7 +209,7 @@ anz_voidframe_stellarite = {
 	}
 
 	enactment_time = 1800 # 5 years
-	
+
 	resources = {
 		category = megastructures
 		cost = {
@@ -217,7 +217,7 @@ anz_voidframe_stellarite = {
 			acot_sr_stellarite = 20000
 		}
 	}
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -227,23 +227,23 @@ anz_voidframe_stellarite = {
 		is_voidframe_exclusive_pe = yes
 		has_voidframe_mods_aot = yes
 	}
-	
+
 	allow = {
 		has_stellarite_capital = yes
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
 	}
-	
+
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = anz_voidframe_stellarite_effect
 
 		hidden_effect = {
-			set_planet_flag = voidframe_stellarite
+			set_carrier_flag = voidframe_stellarite
 			add_deposit = anz_voidframe_stellar_deposit
 			remove_deposit = anz_voidframe_phanon_deposit
 
@@ -252,7 +252,7 @@ anz_voidframe_stellarite = {
             from = { country_event = { id = anz_voidframe.13 }}
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 10
 	}
@@ -275,7 +275,7 @@ decision_voidframe_raid_phanon = {
 		}
 		NOR = {
 			has_modifier = acot_modifier_vault_delay
-			has_planet_flag = ongoing_vault_infiltration
+			has_carrier_flag = ongoing_vault_infiltration
 			has_global_flag = aot_phanon_content_OFF
 		}
 		owner = {
@@ -295,14 +295,14 @@ decision_voidframe_raid_phanon = {
 			is_voidframe_de = yes
 		}
 		NOR = {
-			has_planet_flag = acot_vault_floor_four_cleared
-			has_planet_flag = acot_vault_rival_cleared
+			has_carrier_flag = acot_vault_floor_four_cleared
+			has_carrier_flag = acot_vault_rival_cleared
 		}
 		has_ground_combat = no
 	}
 	effect = {
 		hidden_effect = {
-			set_planet_flag = ongoing_vault_infiltration
+			set_carrier_flag = ongoing_vault_infiltration
 			add_modifier = {
 				modifier = acot_modifier_vault_delay
 				months = 6

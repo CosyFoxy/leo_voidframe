@@ -127,25 +127,25 @@ is_voidframe_outdated_oe = {
 
 # Check Upgrade Level
 is_voidframe_dm = {
-	has_planet_flag = voidframe_enigmatic
+	has_carrier_flag = voidframe_enigmatic
 }
 
 is_voidframe_de = {
-	has_planet_flag = voidframe_enigmatic_ae
+	has_carrier_flag = voidframe_enigmatic_ae
 }
 
 is_voidframe_pe = {
-	has_planet_flag = voidframe_phanon
+	has_carrier_flag = voidframe_phanon
 }
 
 is_voidframe_se = {
-	has_planet_flag = voidframe_stellarite
+	has_carrier_flag = voidframe_stellarite
 }
 
 is_voidframe_te = {
-	has_planet_flag = voidframe_soul
+	has_carrier_flag = voidframe_soul
 }
 
 is_voidframe_oe = {
-	has_planet_flag = voidframe_light
+	has_carrier_flag = voidframe_light
 }

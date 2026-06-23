@@ -11,7 +11,7 @@ decision_voidframe_guardian_repair_station_$ID$ = {
     potential = {
         exists = owner
         giga_is_frame_world = yes
-        has_planet_flag = voidframe_guardian_defensive_station_$ID$_destroyed
+        has_carrier_flag = voidframe_guardian_defensive_station_$ID$_destroyed
     }
 
     allow = {

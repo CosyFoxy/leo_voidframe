@@ -2,7 +2,7 @@ namespace = anz_voidframe
 
 # event for reminding to upgrade ship designs
 
-planet_event = {
+carrier_event = {
     id = anz_voidframe.14
     is_triggered_only = yes
     title = voidframe_guardian_upgradable_reminder.title
@@ -25,7 +25,7 @@ country_event = {
             giga_has_frameworld_origin = yes
             exists = capital_scope
             capital_scope = {
-                has_planet_flag = guardian_defensive_station
+                has_carrier_flag = guardian_defensive_station
             }
             any_controlled_fleet = {
                 has_fleet_flag = voidframe_guardian_defensive_station

@@ -89,7 +89,7 @@
             # Amerigo Digsite
             if = {
                 limit = {
-                    fromfrom.planet = { has_planet_flag = can_have_precursor_event }
+                    fromfrom.planet = { has_carrier_flag = can_have_precursor_event }
                     NOR = {
                         has_global_flag = acot_digsite_1_happened
                         has_global_flag = acot_amerigo_forbidden
