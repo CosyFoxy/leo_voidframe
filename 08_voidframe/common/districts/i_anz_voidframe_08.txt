@@ -174,6 +174,7 @@ district_giga_voidframe_enigmatic_ae = {
     }
 }
 
+
 district_giga_voidframe_phanon = {
     base_buildtime = 630
     icon = district_macripp_runic_power_generator
@@ -198,7 +199,7 @@ district_giga_voidframe_phanon = {
     }
 
     prerequisites = {
-        tech_phanon_stellar_converter
+      tech_phanon_stellar_converter
     }
 
     show_tech_unlock_if = {
@@ -206,7 +207,7 @@ district_giga_voidframe_phanon = {
     }
 
     resources = {
-        category = planet_districts
+       category = planet_districts
         cost = {
             alloys = 1000
         }
@@ -216,10 +217,10 @@ district_giga_voidframe_phanon = {
     }
 
     triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_gestalt = no
+       potential = {
+           exists = owner
+           owner = {
+               is_gestalt = no
             }
         }
         modifier = {
@@ -267,13 +268,13 @@ district_giga_voidframe_phanon = {
         trigger = {
             is_voidframe_pe = no
         }
-        text = "district_giga_voidframe_phanon_ae_subtitle"
+        text = district_giga_voidframe_phanon_ae_subtitle
     }
     triggered_name = {
         trigger = {
-            is_voidframe_pe = yes
+        is_voidframe_pe = yes
         }
-        text = "district_giga_voidframe_phanon_ae_subtitle_upgrade"
+        text = district_giga_voidframe_phanon_ae_subtitle_upgrade
     }
 }
 
@@ -325,7 +326,7 @@ district_giga_voidframe_stellarite = {
             }
         }
         modifier = {
-            job_aot_ae_stellariteman_add  = 100
+            job_aot_ae_stellariteman_add = 100
         }
     }
     triggered_planet_modifier = {
@@ -337,7 +338,7 @@ district_giga_voidframe_stellarite = {
             }
         }
         modifier = {
-            job_sun_master_add   = 200
+            job_sun_master_add = 200
         }
     }
 
@@ -349,7 +350,7 @@ district_giga_voidframe_stellarite = {
             }
         }
         modifier = {
-            job_aot_ae_stellaritedrone_add  = 100
+            job_aot_ae_stellaritedrone_add = 100
         }
     }
     triggered_planet_modifier = {
@@ -361,7 +362,7 @@ district_giga_voidframe_stellarite = {
             }
         }
         modifier = {
-            job_sun_masterdrone_add  = 200
+            job_sun_masterdrone_add = 200
         }
     }
 
@@ -369,15 +370,19 @@ district_giga_voidframe_stellarite = {
         trigger = {
             is_voidframe_pe = no
         }
-        text = "district_giga_voidframe_stellarite_subtitle"
+        text = district_giga_voidframe_stellarite_subtitle
     }
     triggered_name = {
         trigger = {
             is_voidframe_pe = yes
         }
-        text = "district_giga_voidframe_stellarite_subtitle_upgrade"
+        text = district_giga_voidframe_stellarite_subtitle_upgrade
     }
 }
+
+inline_script = {
+    script = xhk_toggle/xhk_toggled_code
+    code = "
 
 district_giga_voidframe_soul = {
     base_buildtime = 630
@@ -450,6 +455,9 @@ district_giga_voidframe_soul = {
         trigger = {
             always = yes
         }
-        text = "district_giga_voidframe_soul_subtitle"
+        text = district_giga_voidframe_soul_subtitle
     }
+}
+    "
+    toggle = @has_sots_mod
 }

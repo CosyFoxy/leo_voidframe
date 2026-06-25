@@ -1,17 +1,17 @@
 gwfp_infuse_black_hole = {
 	icon = decision_phanon_black_hole
 	owned_planets_only = yes
-	
+
 	prerequisites = {
 		tech_phanon_stellar_converter
 	}
-	
+
 	show_tech_unlock_if = {
         giga_has_frameworld_origin = yes
 	}
-	
+
 	enactment_time = 1800
-	
+
 	resources = {
 		category = megastructures
 		cost = {
@@ -19,7 +19,7 @@ gwfp_infuse_black_hole = {
 			influence = 300
 		}
 	}
-	
+
 	potential = {
 		has_global_flag = anz_voidframe_installed
 		owner = {
@@ -30,7 +30,7 @@ gwfp_infuse_black_hole = {
 			has_carrier_flag = frameworld_infused_black_hole
 		}
 	}
-	
+
 	allow = {
 		custom_tooltip_fail = {
 			not = {
@@ -39,7 +39,7 @@ gwfp_infuse_black_hole = {
 			text = giga_frameworld_upgrade_fail
 		}
 	}
-	
+
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = giga_frameworld_upgrade_warning
@@ -49,7 +49,7 @@ gwfp_infuse_black_hole = {
 
 			set_carrier_flag = frameworld_infused_black_hole
 			planet = { add_deposit = d_gwfp_phanon_black_hole }
-			
+
 			solar_system = {
 				save_event_target_as = giga_system
 			}
@@ -64,7 +64,7 @@ gwfp_infuse_black_hole = {
 			}
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 1000000
 	}

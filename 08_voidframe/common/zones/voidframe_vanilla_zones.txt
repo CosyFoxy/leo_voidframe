@@ -167,6 +167,8 @@ zone_voidframe_zone_SE_nexus = {
 # Districts that currently have no alpha equivalent just get more jobs
 #############################################################
 #TODO, fix the borked jobs
+#todo decide how to handle AOT stuffs
+#todo clean up adding of job into inline if possible
 
 # FOUNDRY
 zone_voidframe_zone_DM_foundry = {
@@ -277,6 +279,8 @@ zone_voidframe_zone_DE_foundry = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
+
+
 zone_voidframe_zone_PE_foundry = {
     icon = GFX_anz_voidframe_zone_PE_ALLOY
 
@@ -494,6 +498,7 @@ zone_voidframe_zone_DE_factory = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
+
 zone_voidframe_zone_PE_factory = {
     icon = GFX_anz_voidframe_zone_PE_CONSUMER_GOODS
 
@@ -3573,10 +3578,16 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
         building_ae_sky_dome
         building_phanon_sky_dome
         building_stellarite_sky_dome
-
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
         #PD
         building_pd_eludium_floating_resort
         building_pd_acean_medical_center
+        "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
+
     }
 
     zone_sets = {
@@ -3642,10 +3653,16 @@ zone_voidframe_zone_DE_amenities = {
         building_ae_sky_dome
         building_phanon_sky_dome
         building_stellarite_sky_dome
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
     }
 
     zone_sets = {
@@ -3712,9 +3729,15 @@ zone_voidframe_zone_PE_amenities = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -3781,9 +3804,15 @@ zone_voidframe_zone_SE_amenities = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -3852,9 +3881,15 @@ zone_voidframe_zone_DM_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -3921,9 +3956,15 @@ zone_voidframe_zone_DE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -3990,9 +4031,15 @@ zone_voidframe_zone_PE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -4059,9 +4106,15 @@ zone_voidframe_zone_SE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -4091,7 +4144,7 @@ zone_voidframe_zone_DM_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2
@@ -4133,7 +4186,7 @@ zone_voidframe_zone_DE_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2
@@ -4176,7 +4229,7 @@ zone_voidframe_zone_PE_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2
@@ -4218,7 +4271,7 @@ zone_voidframe_zone_SE_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2

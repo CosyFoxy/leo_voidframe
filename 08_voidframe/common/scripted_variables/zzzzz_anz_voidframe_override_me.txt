@@ -1,0 +1,4 @@
+@has_acquisition_of_tech = 0
+@has_sots_mod = 0
+@has_sbtg_mod = 0
+@has_planetary_diversity_unique_worlds = 0

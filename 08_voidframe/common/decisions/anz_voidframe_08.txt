@@ -134,6 +134,7 @@ anz_voidframe_enigmatic_ae = {
 	}
 }
 
+
 anz_voidframe_phanon = {
 	owned_planets_only = yes
 	icon = decision_voidframe_pe
@@ -258,6 +259,7 @@ anz_voidframe_stellarite = {
 	}
 }
 
+
 # Phanon Vault RAID
 decision_voidframe_raid_phanon = {
 	owned_planets_only = yes
@@ -377,6 +379,7 @@ decision_voidframe_raid_phanon = {
 	}
 }
 
+#todo find ag compat variable and toggle code
 # Ancient Empire Compat
 frameag_evac = {
 	owned_planets_only = yes
@@ -402,7 +405,8 @@ frameag_evac = {
 				save_event_target_as = target_frameworld
 			}
 		}
-		every_owned_pop = {
+
+		every_owned_pop_group = {
 			resettle_pop = {
 				pop = THIS
 				planet = event_target:target_frameworld
