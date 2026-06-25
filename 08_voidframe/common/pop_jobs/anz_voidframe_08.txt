@@ -178,9 +178,10 @@ anz_voidframe_admin_dm = {
         mult = value:scripted_ethics_weight_mult|ETHIC|xenophile|
     }
 
+
     weight = {
         weight = @specialist_job_weight
-        mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
         mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
         modifier = {
             factor = 0.2
@@ -248,10 +249,10 @@ anz_voidframe_admin_drone_dm = {
 			energy = 10
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
@@ -296,10 +297,10 @@ anz_voidframe_admin_drone_de = {
 			energy = 10
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
@@ -343,10 +344,10 @@ anz_voidframe_admin_drone_pe = {
 			energy = 10
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
@@ -388,10 +389,10 @@ anz_voidframe_admin_drone_se = {
 			energy = 15
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
@@ -437,10 +438,10 @@ anz_voidframe_synapse_drone_dm = {
 			minerals = 4
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
@@ -486,10 +487,10 @@ anz_voidframe_synapse_drone_de = {
 			minerals = 4
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
@@ -500,7 +501,7 @@ anz_voidframe_synapse_drone_de = {
         }
     }
 
-	inline_script = "jobs/automodding_priority_unity"
+	inline_script = jobs/automodding_priority_unity
 }
 
 anz_voidframe_synapse_drone_pe = {
@@ -533,10 +534,10 @@ anz_voidframe_synapse_drone_pe = {
 			energy = 10
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
@@ -578,10 +579,10 @@ anz_voidframe_synapse_drone_se = {
 			energy = 15
 		}
 	}
-
+    #todo check weight
     weight = {
         weight = @synapse_drone_job_weight
-        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        #mult = value:scripted_modifier_job_weight_mult|MODIFIER|
         mult = value:scripted_job_weight_shroud_forged_mult
         modifier = {
             factor = 0.9
