@@ -1,0 +1,12 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_mcripp_background"
+        textureFile = "gfx/interface/planetview/megastructure_background/mcripp.dds"
+    }
+
+    spriteType = {
+        name = "GFX_solaripp_background"
+        textureFile = "gfx/interface/planetview/megastructure_background/solaripp.dds"
+    }
+}

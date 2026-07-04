@@ -1,6 +1,7 @@
 frameripp_0 = {
 	entity = "phanon_macRIPP_stage_3_entity"
 	construction_entity = "phanon_macRIPP_stage_3_construction_entity"
+	portrait = "GFX_mcripp_background"
 	build_time = 0
 	show_in_outliner = no
 	resources = {
@@ -20,10 +21,15 @@ frameripp_0 = {
 frameripp_1 = {
 	entity = "sigma_solaRIPP_stage_3_entity"
 	construction_entity = "sigma_solaRIPP_stage_2_construction_entity"
+	portrait = GFX_solaripp_background
 	build_time = 0
 	show_in_outliner = no
 	resources = {
 		category = megastructures
+		cost = {
+			alloys = 100000
+			aot_sr_runic_power = 12000
+		}
 		produces = {
 			alloys = 7500
 			aot_sr_runic_power = 500
@@ -33,12 +39,24 @@ frameripp_1 = {
 	}
 
 	potential = {
-		has_technology = tech_sigma_solaripp
-		giga_has_frameworld_origin = yes
+		owner? = {
+			has_technology = tech_sigma_solaripp
+			giga_has_frameworld_origin = yes
+		}
 		has_global_flag = has_aot_mod
 	}
 
 	upgrade_from = {
 		frameripp_0
+	}
+
+	on_build_complete = {
+		set_star_flag = system_has_solaripp
+		from = {
+			set_country_flag = built_solaripp
+		}
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
 	}
 }
