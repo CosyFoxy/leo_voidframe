@@ -669,6 +669,9 @@ zone_voidframe_zone_DM_trade = {
     zone_sets = {
         trade
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_trade = {
     icon = GFX_anz_voidframe_zone_DE_TRADE
@@ -731,6 +734,9 @@ zone_voidframe_zone_DE_trade = {
     zone_sets = {
         trade
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_PE_trade = {
     icon = GFX_anz_voidframe_zone_PE_TRADE
@@ -792,6 +798,9 @@ zone_voidframe_zone_PE_trade = {
 
     zone_sets = {
         trade
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_SE_trade = {
