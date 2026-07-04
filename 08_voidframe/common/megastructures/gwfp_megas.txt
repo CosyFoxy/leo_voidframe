@@ -16,3 +16,29 @@ frameripp_0 = {
 		always = no
 	}
 }
+
+frameripp_1 = {
+	entity = "sigma_solaRIPP_stage_3_entity"
+	construction_entity = "sigma_solaRIPP_stage_2_construction_entity"
+	build_time = 0
+	show_in_outliner = no
+	resources = {
+		category = megastructures
+		produces = {
+			alloys = 7500
+			aot_sr_runic_power = 500
+			acot_sr_stellarite = 500
+			energy = 7500
+		}
+	}
+
+	potential = {
+		has_technology = tech_sigma_solaripp
+		giga_has_frameworld_origin = yes
+		has_global_flag = has_aot_mod
+	}
+
+	upgrade_from = {
+		frameripp_0
+	}
+}
