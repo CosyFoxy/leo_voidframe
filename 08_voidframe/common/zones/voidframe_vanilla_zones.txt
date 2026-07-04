@@ -662,6 +662,9 @@ zone_voidframe_zone_DM_trade = {
         trade
         origin
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 
     zone_sets = {
         trade
@@ -721,6 +724,9 @@ zone_voidframe_zone_DE_trade = {
         trade
         origin
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 
     zone_sets = {
         trade
@@ -779,6 +785,9 @@ zone_voidframe_zone_PE_trade = {
     included_building_sets = {
         trade
         origin
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 
     zone_sets = {
@@ -842,6 +851,9 @@ zone_voidframe_zone_SE_trade = {
 
     zone_sets = {
         trade
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -1327,7 +1339,7 @@ zone_voidframe_zone_DM_mining = {
         ACOT_JOB_NORM = job_acot_mineralman_add
         ACOT_JOB_GEST = job_acot_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 200
     }
 
@@ -1382,7 +1394,7 @@ zone_voidframe_zone_DE_mining = {
         ACOT_JOB_NORM = job_ae_mineralman_add
         ACOT_JOB_GEST = job_ae_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 200
     }
 
@@ -1438,7 +1450,7 @@ zone_voidframe_zone_PE_mining = {
         ACOT_JOB_NORM = job_phanon_mineralman_add
         ACOT_JOB_GEST = job_phanon_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 200
     }
 
@@ -1494,7 +1506,7 @@ zone_voidframe_zone_SE_mining = {
         ACOT_JOB_NORM = job_stellarite_mineralman_add
         ACOT_JOB_GEST = job_stellarite_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 200
     }
 
@@ -1552,7 +1564,7 @@ zone_voidframe_zone_DM_decompressor = {
         ACOT_JOB_NORM = job_acot_mineralman_add
         ACOT_JOB_GEST = job_acot_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 800
     }
 
@@ -1608,7 +1620,7 @@ zone_voidframe_zone_DE_decompressor = {
         ACOT_JOB_NORM = job_ae_mineralman_add
         ACOT_JOB_GEST = job_ae_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 800
     }
 
@@ -1664,7 +1676,7 @@ zone_voidframe_zone_PE_decompressor = {
         ACOT_JOB_NORM = job_phanon_mineralman_add
         ACOT_JOB_GEST = job_phanon_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 800
     }
 
@@ -1720,7 +1732,7 @@ zone_voidframe_zone_SE_decompressor = {
         ACOT_JOB_NORM = job_stellarite_mineralman_add
         ACOT_JOB_GEST = job_stellarite_mineraldrone_add
         JOB_NORM = job_miner_add
-        JOB_GEST = job_miner_drone_add
+        JOB_GEST = job_mining_drone_add
         AMOUNT = 800
     }
 
@@ -1777,7 +1789,7 @@ zone_voidframe_zone_DM_farming = {
         ACOT_JOB_NORM = job_acot_foodman_add
         ACOT_JOB_GEST = job_acot_fooddrone_add
         JOB_NORM = job_farmer_add
-        JOB_GEST = job_farmer_drone_add
+        JOB_GEST = job_agri_drone_add
         AMOUNT = 200
     }
 
@@ -1828,7 +1840,7 @@ zone_voidframe_zone_DE_farming = {
         ACOT_JOB_NORM = job_ae_foodman_add
         ACOT_JOB_GEST = job_ae_fooddrone_add
         JOB_NORM = job_farmer_add
-        JOB_GEST = job_farmer_drone_add
+        JOB_GEST = job_agri_drone_add
         AMOUNT = 200
     }
 
@@ -1879,7 +1891,7 @@ zone_voidframe_zone_PE_farming = {
         ACOT_JOB_NORM = job_phanon_foodman_add
         ACOT_JOB_GEST = job_phanon_fooddrone_add
         JOB_NORM = job_farmer_add
-        JOB_GEST = job_farmer_drone_add
+        JOB_GEST = job_agri_drone_add
         AMOUNT = 200
     }
 
@@ -1930,7 +1942,7 @@ zone_voidframe_zone_SE_farming = {
         ACOT_JOB_NORM = job_stellarite_foodman_add
         ACOT_JOB_GEST = job_stellarite_fooddrone_add
         JOB_NORM = job_farmer_add
-        JOB_GEST = job_farmer_drone_add
+        JOB_GEST = job_agri_drone_add
         AMOUNT = 200
     }
 
@@ -1990,6 +2002,9 @@ zone_voidframe_zone_DMacot_admin = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DM_admin = {
     icon = GFX_anz_voidframe_zone_DM_UNITY
@@ -2035,6 +2050,9 @@ zone_voidframe_zone_DM_admin = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_admin = {
     icon = GFX_anz_voidframe_zone_DE_UNITY
@@ -2078,6 +2096,9 @@ zone_voidframe_zone_DE_admin = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_PE_admin = {
@@ -2123,6 +2144,9 @@ zone_voidframe_zone_PE_admin = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_admin = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
@@ -2166,6 +2190,9 @@ zone_voidframe_zone_SE_admin = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -2213,6 +2240,9 @@ zone_voidframe_zone_DM_temple = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_temple = {
     icon = GFX_anz_voidframe_zone_DE_UNITY
@@ -2256,6 +2286,9 @@ zone_voidframe_zone_DE_temple = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 } #todo no alpha priest
 zone_voidframe_zone_PE_temple = {
@@ -2301,6 +2334,9 @@ zone_voidframe_zone_PE_temple = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_PE_temple = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
@@ -2344,6 +2380,9 @@ zone_voidframe_zone_PE_temple = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -2390,6 +2429,9 @@ zone_voidframe_zone_DM_synapse = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_synapse = {
     icon = GFX_anz_voidframe_zone_DE_UNITY
@@ -2432,6 +2474,9 @@ zone_voidframe_zone_DE_synapse = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_PE_synapse = {
@@ -2476,8 +2521,11 @@ zone_voidframe_zone_PE_synapse = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
-zone_voidframe_zone_PE_synapse = {
+zone_voidframe_zone_SE_synapse = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
 
     swap_type = district_giga_voidframe_synapse_se
@@ -2518,6 +2566,9 @@ zone_voidframe_zone_PE_synapse = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -2564,6 +2615,9 @@ zone_voidframe_zone_DM_simulation = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_simulation = {
     icon = GFX_anz_voidframe_zone_DE_UNITY
@@ -2606,6 +2660,9 @@ zone_voidframe_zone_DE_simulation = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_PE_simulation = {
@@ -2650,8 +2707,11 @@ zone_voidframe_zone_PE_simulation = {
     zone_sets = {
         unity
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
-zone_voidframe_zone_PE_simulation = {
+zone_voidframe_zone_SE_simulation = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
 
     swap_type = district_giga_voidframe_simulation_se
@@ -2692,6 +2752,9 @@ zone_voidframe_zone_PE_simulation = {
 
     zone_sets = {
         unity
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -2926,6 +2989,9 @@ icon = GFX_anz_voidframe_zone_DM_RESEARCH
     zone_sets = {
         research
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_research = {
     icon = GFX_anz_voidframe_zone_DE_RESEARCH
@@ -2994,6 +3060,9 @@ zone_voidframe_zone_DE_research = {
 
     zone_sets = {
         research
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_PE_research = {
@@ -3064,6 +3133,9 @@ zone_voidframe_zone_PE_research = {
     zone_sets = {
         research
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_research = {
     icon = GFX_anz_voidframe_zone_SE_RESEARCH
@@ -3133,6 +3205,9 @@ zone_voidframe_zone_SE_research = {
     zone_sets = {
         research
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 
 # REFINERY
@@ -3182,6 +3257,9 @@ zone_voidframe_zone_DM_refinery = {
     zone_sets = {
         refinery
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_refinery = {
     icon = GFX_anz_voidframe_zone_DE_REFINERY
@@ -3228,6 +3306,9 @@ zone_voidframe_zone_DE_refinery = {
 
     zone_sets = {
         refinery
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 } #todo no gestalt or individual
 zone_voidframe_zone_PE_refinery = {
@@ -3276,6 +3357,9 @@ zone_voidframe_zone_PE_refinery = {
     zone_sets = {
         refinery
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_refinery = {
     icon = GFX_anz_voidframe_zone_SE_REFINERY
@@ -3322,6 +3406,9 @@ zone_voidframe_zone_SE_refinery = {
 
     zone_sets = {
         refinery
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -3372,6 +3459,9 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
     zone_sets = {
         anticrime
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }  #AOT locked since we using dm enforcer
 zone_voidframe_zone_DE_anticrime = {
     icon = GFX_anz_voidframe_zone_DE_CITY
@@ -3419,6 +3509,9 @@ zone_voidframe_zone_DE_anticrime = {
 
     zone_sets = {
         anticrime
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_PE_anticrime = {
@@ -3468,6 +3561,9 @@ zone_voidframe_zone_PE_anticrime = {
     zone_sets = {
         anticrime
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_anticrime = {
     icon = GFX_anz_voidframe_zone_SE_CITY
@@ -3516,6 +3612,9 @@ zone_voidframe_zone_SE_anticrime = {
     zone_sets = {
         anticrime
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 
 # AMENITIES
@@ -3526,10 +3625,17 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_dm_zone
-        TECH = "tech_acot_dm_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_dm_zone_twotech
+        TECH1 = "tech_acot_dm_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_acot_dm_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
@@ -3549,6 +3655,7 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
     included_building_sets = {
         amenities
     }
+
     include = {
         building_luxury_residence
         building_paradise_dome
@@ -3593,6 +3700,9 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
     zone_sets = {
         amenities
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_amenities = {
     icon = GFX_anz_voidframe_zone_DE_AMENITIES
@@ -3601,10 +3711,17 @@ zone_voidframe_zone_DE_amenities = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_de_zone
-        TECH = "tech_acot_ae_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_de_zone_twotech
+        TECH1 = "tech_acot_ae_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_acot_ae_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
@@ -3668,6 +3785,9 @@ zone_voidframe_zone_DE_amenities = {
     zone_sets = {
         amenities
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 } # no alpha entertainer
 zone_voidframe_zone_PE_amenities = {
     icon = GFX_anz_voidframe_zone_PE_AMENITIES
@@ -3676,10 +3796,17 @@ zone_voidframe_zone_PE_amenities = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_pe_zone
-        TECH = "tech_phanon_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_pe_zone_twotech
+        TECH1 = "tech_phanon_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_phanon_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
@@ -3743,6 +3870,9 @@ zone_voidframe_zone_PE_amenities = {
     zone_sets = {
         amenities
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_amenities = {
     icon = GFX_anz_voidframe_zone_SE_AMENITIES
@@ -3751,10 +3881,17 @@ zone_voidframe_zone_SE_amenities = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_se_zone
-        TECH = "tech_stellarite_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_se_zone_twotech
+        TECH1 = "tech_stellarite_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_stellarite_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
@@ -3817,6 +3954,9 @@ zone_voidframe_zone_SE_amenities = {
 
     zone_sets = {
         amenities
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -3895,6 +4035,9 @@ zone_voidframe_zone_DM_amenities_dystopian = {
     zone_sets = {
         amenities
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_amenities_dystopian = {
     icon = GFX_anz_voidframe_zone_DE_AMENITIES
@@ -3969,6 +4112,9 @@ zone_voidframe_zone_DE_amenities_dystopian = {
 
     zone_sets = {
         amenities
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 } # no alpha overlord
 zone_voidframe_zone_PE_amenities_dystopian = {
@@ -4045,6 +4191,9 @@ zone_voidframe_zone_PE_amenities_dystopian = {
     zone_sets = {
         amenities
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_amenities_dystopian = {
     icon = GFX_anz_voidframe_zone_SE_AMENITIES
@@ -4120,6 +4269,9 @@ zone_voidframe_zone_SE_amenities_dystopian = {
     zone_sets = {
         amenities
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 
 # EHOF NEG MASS
@@ -4164,6 +4316,9 @@ zone_voidframe_zone_DM_negative_mass = {
     zone_sets = {
         ehof_negative
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_negative_mass = {
     icon = GFX_anz_voidframe_zone_DE_NEGEN
@@ -4207,6 +4362,9 @@ zone_voidframe_zone_DE_negative_mass = {
     zone_sets = {
         ehof_negative
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_PE_negative_mass = {
     icon = GFX_anz_voidframe_zone_PE_NEGEN
@@ -4248,6 +4406,9 @@ zone_voidframe_zone_PE_negative_mass = {
 
     zone_sets = {
         ehof_negative
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_SE_negative_mass = {
@@ -4291,6 +4452,9 @@ zone_voidframe_zone_SE_negative_mass = {
     zone_sets = {
         ehof_negative
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 
 # EHOF SENT METAL
@@ -4326,6 +4490,9 @@ zone_voidframe_zone_DM_sentient_metal = {
     zone_sets = {
         ehof_sentient
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_sentient_metal = {
     icon = GFX_anz_voidframe_zone_DE_SENT
@@ -4360,6 +4527,9 @@ zone_voidframe_zone_DE_sentient_metal = {
     zone_sets = {
         ehof_sentient
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_PE_sentient_metal = {
     icon = GFX_anz_voidframe_zone_PE_SENT
@@ -4393,6 +4563,9 @@ zone_voidframe_zone_PE_sentient_metal = {
     zone_sets = {
         ehof_sentient
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_sentient_metal = {
     icon = GFX_anz_voidframe_zone_SE_SENT
@@ -4425,6 +4598,9 @@ zone_voidframe_zone_SE_sentient_metal = {
 
     zone_sets = {
         ehof_sentient
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -4467,6 +4643,9 @@ zone_voidframe_zone_DM_tensiles = {
     zone_sets = {
         supertensiles
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_tensiles = {
     icon = GFX_anz_voidframe_zone_DE_TENSILES
@@ -4505,6 +4684,9 @@ zone_voidframe_zone_DE_tensiles = {
 
     zone_sets = {
         supertensiles
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 zone_voidframe_zone_PE_tensiles = {
@@ -4545,6 +4727,9 @@ zone_voidframe_zone_PE_tensiles = {
     zone_sets = {
         supertensiles
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_tensiles = {
     icon = GFX_anz_voidframe_zone_SE_TENSILES
@@ -4583,6 +4768,9 @@ zone_voidframe_zone_SE_tensiles = {
 
     zone_sets = {
         supertensiles
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 }
 
@@ -4627,6 +4815,9 @@ zone_voidframe_zone_DM_fortress = {
     }
 
     convert_to = { zone_voidframe_zone_DM_fortress_maginot }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_fortress = {
     icon = GFX_anz_voidframe_zone_DE_ARMY
@@ -4668,6 +4859,9 @@ zone_voidframe_zone_DE_fortress = {
     }
 
     convert_to = { zone_voidframe_zone_DE_fortress_maginot }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 } #NO AE job, the acot job is AE
 zone_voidframe_zone_PE_fortress = {
     icon = GFX_anz_voidframe_zone_PE_ARMY
@@ -4709,6 +4903,9 @@ zone_voidframe_zone_PE_fortress = {
     }
 
     convert_to = { zone_voidframe_zone_PE_fortress_maginot }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_fortress = {
     icon = GFX_anz_voidframe_zone_SE_ARMY
@@ -4750,6 +4947,9 @@ zone_voidframe_zone_SE_fortress = {
     }
 
     convert_to = { zone_voidframe_zone_SE_fortress_maginot }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 
 # MAGINOT BUNKER
@@ -4798,6 +4998,9 @@ zone_voidframe_zone_DM_fortress_maginot = {
     }
 
     convert_to = { zone_voidframe_zone_DM_fortress }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_DE_fortress_maginot = {
     icon = GFX_anz_voidframe_zone_DE_ARMY
@@ -4844,6 +5047,9 @@ zone_voidframe_zone_DE_fortress_maginot = {
     }
 
     convert_to = { zone_voidframe_zone_DE_fortress }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 } #NO AE job, the acot job is AE
 zone_voidframe_zone_PE_fortress_maginot = {
     icon = GFX_anz_voidframe_zone_PE_ARMY
@@ -4890,6 +5096,9 @@ zone_voidframe_zone_PE_fortress_maginot = {
     }
 
     convert_to = { zone_voidframe_zone_PE_fortress }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 zone_voidframe_zone_SE_fortress_maginot = {
     icon = GFX_anz_voidframe_zone_SE_ARMY
@@ -4936,6 +5145,9 @@ zone_voidframe_zone_SE_fortress_maginot = {
     }
 
     convert_to = { zone_voidframe_zone_SE_fortress }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 
 # MAGINOT GUNS #todo icon

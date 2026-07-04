@@ -6,8 +6,16 @@ potential = { # planet scope
         owner = {
             giga_has_frameworld_origin = yes
             is_wilderness_empire = no
-            has_technology = $TECH$
-            $OTHER_REQ$
+            OR = {
+                AND = {
+                    has_technology = $TECH1$
+                    $OTHER_REQ1$
+                }
+                AND = {
+                    has_technology = $TECH2$
+                    $OTHER_REQ2$
+                }
+            }
         }
         $OTHER_REQ_PLANET$
     }
