@@ -4676,7 +4676,7 @@ zone_voidframe_zone_PE_fortress = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_de_zone
+        script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_stronghold"
         OTHER_REQ = ""
         OTHER_REQ_PLANET = "NOT = { has_deposit = d_frameworld_maginot }"
