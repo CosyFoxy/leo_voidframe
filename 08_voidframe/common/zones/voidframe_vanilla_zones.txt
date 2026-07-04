@@ -4940,7 +4940,7 @@ zone_voidframe_zone_SE_fortress_maginot = {
 
 # MAGINOT GUNS #todo icon
 zone_voidframe_zone_DM_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_DM_maginotarty
+    icon = GFX_anz_voidframe_zone_DM_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_dm
     swap_type_weight = 10
@@ -4985,7 +4985,7 @@ zone_voidframe_zone_DM_maginotarty = {
 
 } #this uses acot jobs for dm and it annoys me
 zone_voidframe_zone_DE_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_DE_maginotarty
+    icon = GFX_anz_voidframe_zone_DE_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_de
     swap_type_weight = 10
@@ -5029,7 +5029,7 @@ zone_voidframe_zone_DE_maginotarty = {
     }
 }
 zone_voidframe_zone_PE_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_PE_maginotarty
+    icon = GFX_anz_voidframe_zone_PE_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_pe
     swap_type_weight = 10
@@ -5073,7 +5073,7 @@ zone_voidframe_zone_PE_maginotarty = {
     }
 }
 zone_voidframe_zone_SE_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_SE_maginotarty
+    icon = GFX_anz_voidframe_zone_SE_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_se
     swap_type_weight = 10
@@ -5119,7 +5119,7 @@ zone_voidframe_zone_SE_maginotarty = {
 
 # MAGINOT SHIELD #todo icon
 zone_voidframe_zone_DM_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_DM_maginotshield
+    icon = GFX_anz_voidframe_zone_DM_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_dm
     swap_type_weight = 10
@@ -5163,7 +5163,7 @@ zone_voidframe_zone_DM_maginotshield = {
     }
 } #this uses acot jobs for dm and it annoys me
 zone_voidframe_zone_DE_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_DE_maginotshield
+    icon = GFX_anz_voidframe_zone_DE_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_de
     swap_type_weight = 10
@@ -5207,7 +5207,7 @@ zone_voidframe_zone_DE_maginotshield = {
     }
 }
 zone_voidframe_zone_PE_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_PE_maginotshield
+    icon = GFX_anz_voidframe_zone_PE_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_pe
     swap_type_weight = 10
@@ -5251,7 +5251,7 @@ zone_voidframe_zone_PE_maginotshield = {
     }
 }
 zone_voidframe_zone_SE_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_SE_maginotshield
+    icon = GFX_anz_voidframe_zone_SE_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_se
     swap_type_weight = 10
