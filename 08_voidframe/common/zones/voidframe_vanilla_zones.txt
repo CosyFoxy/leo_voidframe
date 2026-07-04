@@ -2338,7 +2338,7 @@ zone_voidframe_zone_PE_temple = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
-zone_voidframe_zone_PE_temple = {
+zone_voidframe_zone_SE_temple = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
 
     swap_type = district_giga_voidframe_temple_se
