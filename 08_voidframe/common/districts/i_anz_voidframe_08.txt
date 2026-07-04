@@ -179,7 +179,7 @@ district_giga_voidframe_phanon = {
     base_buildtime = 630
     icon = district_macripp_runic_power_generator
     gridbox = district_macripp_runic_power_generator
-    is_capped_by_modifier = no
+    is_uncapped = { always = yes }
 
     zone_slots = {
         slot_anz_voidframe_phanon
@@ -282,7 +282,7 @@ district_giga_voidframe_stellarite = {
     base_buildtime = 630
     icon = district_hab_stellarite_generator
     gridbox = district_hab_stellarite_generator
-    is_capped_by_modifier = no
+    is_uncapped = { always = yes }
 
     zone_slots = {
         slot_anz_voidframe_stellarite

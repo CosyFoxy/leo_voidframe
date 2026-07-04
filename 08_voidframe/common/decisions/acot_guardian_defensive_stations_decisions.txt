@@ -95,7 +95,7 @@ decision_voidframe_guardian_defensive_station = {
             set_carrier_flag = guardian_defensive_station
             #For this, the decisions to repair defensive stations should be disallowed once guardian defensives are installed
             #Otherwise, repairing destroyed stations will respawn normal stations
-            planet_event = {
+            carrier_event = {
                 id = anz_voidframe.14
             }
             anz_voidframe_destroy_old_defensive_stations = yes

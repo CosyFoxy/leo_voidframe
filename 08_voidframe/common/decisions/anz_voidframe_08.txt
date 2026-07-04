@@ -323,7 +323,7 @@ decision_voidframe_raid_phanon = {
 							}
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = acot_pmc.12
 					}
 				}
@@ -336,7 +336,7 @@ decision_voidframe_raid_phanon = {
 							}
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = acot_pmc.13
 					}
 				}
@@ -349,7 +349,7 @@ decision_voidframe_raid_phanon = {
 							}
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = acot_pmc.14
 					}
 				}
@@ -362,13 +362,13 @@ decision_voidframe_raid_phanon = {
 							}
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = acot_pmc.15
 					}
 				}
 			}
 			else = {
-				planet_event = {
+				carrier_event = {
 					id = acot_pmc.16
 				}			
 			}

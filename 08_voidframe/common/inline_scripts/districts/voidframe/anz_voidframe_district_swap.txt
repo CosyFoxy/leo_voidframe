@@ -1,7 +1,7 @@
 # This script generates the district used for swapping when using the proper zone
 # purely for aesthetics
 
-is_capped_by_modifier = no
+is_uncapped = { always = yes }
 
 zone_slots = {
     slot_empty

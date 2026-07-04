@@ -595,6 +595,10 @@ anz_voidframe_synapse_drone_se = {
 }
 
 # theta stuff
+
+inline_script = {
+    script = xhk_toggle/xhk_toggled_code
+    code = "
 anz_voidframe_meditator = {
     category = specialist
     swappable_data = {
@@ -630,6 +634,9 @@ anz_voidframe_meditator = {
     }
 }
 
+
+
+
 anz_voidframe_meditator_drone = {
 	category = complex_drone
     swappable_data = {
@@ -663,4 +670,6 @@ anz_voidframe_meditator_drone = {
 	weight = {
 		weight = @complex_drone_job_weight
 	}
+}"
+    toggle = @has_sots_mod
 }
