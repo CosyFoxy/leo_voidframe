@@ -1,6 +1,7 @@
 sc_phanon_black_hole = {
 	class			= phanon_black_hole
 	icon			= phanon_black_hole
+	arkship_picture = "arkship_phanon_black_hole"
 	icon_scale		= 2.0
 	planet			= { key = pc_phanon_black_hole }
 	spawn_odds		= 0

@@ -46,6 +46,9 @@ anz_voidframe_alpha_deposit = {
 	}
 
 }
+############## AOT
+############################################
+
 
 anz_voidframe_phanon_deposit = {
 	is_for_colonizable = yes
@@ -100,6 +103,10 @@ anz_voidframe_stellar_deposit = {
 	}
 }
 
+
+inline_script = {
+	script = xhk_toggle/xhk_toggled_code
+	code = "
 anz_voidframe_soul_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
@@ -117,9 +124,14 @@ anz_voidframe_soul_deposit = {
 			minor_artifacts = 14
 		}
 	}
+}"
+	toggle = @has_sots_mod
 }
 
-anz_voidframe_light_deposit = {
+
+inline_script = {
+	script = xhk_toggle/xhk_toggled_code
+	code = "anz_voidframe_light_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -136,4 +148,6 @@ anz_voidframe_light_deposit = {
 			minor_artifacts = 20
 		}
 	}
+}"
+	toggle = @has_sbtg_mod
 }

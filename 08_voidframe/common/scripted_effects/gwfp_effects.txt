@@ -1,3 +1,4 @@
+
 gwfp_destroy_system = {
 	solar_system = {
 		set_star_class = sc_phanon_black_hole
@@ -12,7 +13,7 @@ gwfp_destroy_system = {
 		}
 		save_event_target_as = last_created_phanon_pylon
 		create_ambient_object = {
-			type = "star_explosion"
+			type = star_explosion
 			play_animation_once = yes
 			location = this
 		}
@@ -31,7 +32,7 @@ gwfp_destroy_system = {
 
 	event_target:last_created_phanon_pylon = {
 		create_ambient_object = {
-			type = "phanon_dimensional_rift_portal"
+			type = phanon_dimensional_rift_portal
 			location = this
 		}
 		last_created_ambient_object = {
@@ -56,6 +57,7 @@ gwfp_frame_ripp = {
 
 		solar_system = {
 			spawn_megastructure = {
+				#todo check if this mega actually exists somewhere
 				type = frameripp_0
 				orbit_angle = 0
 				orbit_distance = 0

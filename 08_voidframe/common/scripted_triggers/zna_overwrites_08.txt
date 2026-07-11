@@ -3,13 +3,13 @@
 
 frameag_colony_exception = {
 	OR = {
-		has_planet_flag = ag_ancient_theta_shielded_world
-		has_planet_flag = ag_ancient_beta_shielded_world
-		has_planet_flag = ag_ancient_gamma_shielded_world
-		has_planet_flag = ag_ancient_epsilon_shielded_world
-		has_planet_flag = ag_ancient_epsilon_shielded_world_2
-		has_planet_flag = ag_ancient_epsilon_shielded_world_3
-		has_planet_flag = ag_ancient_eta_shielded_world
+		has_carrier_flag = ag_ancient_theta_shielded_world
+		has_carrier_flag = ag_ancient_beta_shielded_world
+		has_carrier_flag = ag_ancient_gamma_shielded_world
+		has_carrier_flag = ag_ancient_epsilon_shielded_world
+		has_carrier_flag = ag_ancient_epsilon_shielded_world_2
+		has_carrier_flag = ag_ancient_epsilon_shielded_world_3
+		has_carrier_flag = ag_ancient_eta_shielded_world
 	}
 }
 
@@ -30,7 +30,7 @@ can_have_frameworld_outpost = {
 			AND = { # fractured worlds
 				is_planet_class = pc_dark_fractured
 				space_owner = {	has_technology = tech_acot_colonize_fractured }
-			}			
+			}
 
 			is_planet_class = pc_giga_planetary_computer
 			is_planet_class = pc_ringworld_habitable

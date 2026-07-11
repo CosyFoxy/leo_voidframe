@@ -167,6 +167,8 @@ zone_voidframe_zone_SE_nexus = {
 # Districts that currently have no alpha equivalent just get more jobs
 #############################################################
 #TODO, fix the borked jobs
+#todo decide how to handle AOT stuffs
+#todo clean up adding of job into inline if possible
 
 # FOUNDRY
 zone_voidframe_zone_DM_foundry = {
@@ -277,6 +279,8 @@ zone_voidframe_zone_DE_foundry = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
+
+
 zone_voidframe_zone_PE_foundry = {
     icon = GFX_anz_voidframe_zone_PE_ALLOY
 
@@ -494,6 +498,7 @@ zone_voidframe_zone_DE_factory = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
+
 zone_voidframe_zone_PE_factory = {
     icon = GFX_anz_voidframe_zone_PE_CONSUMER_GOODS
 
@@ -657,6 +662,9 @@ zone_voidframe_zone_DM_trade = {
         trade
         origin
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 
     zone_sets = {
         trade
@@ -719,6 +727,9 @@ zone_voidframe_zone_DE_trade = {
         trade
         origin
     }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 
     zone_sets = {
         trade
@@ -780,6 +791,9 @@ zone_voidframe_zone_PE_trade = {
     included_building_sets = {
         trade
         origin
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 
     zone_sets = {
@@ -863,7 +877,7 @@ zone_voidframe_zone_DM_generator = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -918,7 +932,7 @@ zone_voidframe_zone_DE_generator = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -973,7 +987,7 @@ zone_voidframe_zone_PE_generator = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -1028,7 +1042,7 @@ zone_voidframe_zone_SE_generator = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_penrose }"
     }
 
     triggered_district_planet_modifier = {
@@ -1085,7 +1099,7 @@ zone_voidframe_zone_DM_penrose = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1140,7 +1154,7 @@ zone_voidframe_zone_DE_penrose = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1195,7 +1209,7 @@ zone_voidframe_zone_PE_penrose = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1250,7 +1264,7 @@ zone_voidframe_zone_SE_penrose = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_power_hub"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_penrose"
     }
 
     triggered_district_planet_modifier = {
@@ -1307,7 +1321,7 @@ zone_voidframe_zone_DM_mining = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1362,7 +1376,7 @@ zone_voidframe_zone_DE_mining = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1418,7 +1432,7 @@ zone_voidframe_zone_PE_mining = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1474,7 +1488,7 @@ zone_voidframe_zone_SE_mining = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+        OTHER_REQ_PLANET = "NOT = { has_carrier_flag = frameworld_decompressor }"
     }
 
     triggered_district_planet_modifier = {
@@ -1532,7 +1546,7 @@ zone_voidframe_zone_DM_decompressor = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {
@@ -1588,7 +1602,7 @@ zone_voidframe_zone_DE_decompressor = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_acot_ae_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {
@@ -1644,7 +1658,7 @@ zone_voidframe_zone_PE_decompressor = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {
@@ -1700,7 +1714,7 @@ zone_voidframe_zone_SE_decompressor = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_mineral_processing_plant"
         OTHER_REQ = ""
-        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+        OTHER_REQ_PLANET = "has_carrier_flag = frameworld_decompressor"
     }
 
     triggered_district_planet_modifier = {
@@ -2333,7 +2347,7 @@ zone_voidframe_zone_PE_temple = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
-zone_voidframe_zone_PE_temple = {
+zone_voidframe_zone_SE_temple = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
 
     swap_type = district_giga_voidframe_temple_se
@@ -2520,7 +2534,7 @@ zone_voidframe_zone_PE_synapse = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
-zone_voidframe_zone_PE_synapse = {
+zone_voidframe_zone_SE_synapse = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
 
     swap_type = district_giga_voidframe_synapse_se
@@ -2706,7 +2720,7 @@ zone_voidframe_zone_PE_simulation = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
 }
-zone_voidframe_zone_PE_simulation = {
+zone_voidframe_zone_SE_simulation = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
 
     swap_type = district_giga_voidframe_simulation_se
@@ -3650,6 +3664,7 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
     included_building_sets = {
         amenities
     }
+
     include = {
         building_luxury_residence
         building_paradise_dome
@@ -3679,10 +3694,16 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
         building_ae_sky_dome
         building_phanon_sky_dome
         building_stellarite_sky_dome
-
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
         #PD
         building_pd_eludium_floating_resort
         building_pd_acean_medical_center
+        "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
+
     }
 
     zone_sets = {
@@ -3758,10 +3779,16 @@ zone_voidframe_zone_DE_amenities = {
         building_ae_sky_dome
         building_phanon_sky_dome
         building_stellarite_sky_dome
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
     }
 
     zone_sets = {
@@ -3838,9 +3865,15 @@ zone_voidframe_zone_PE_amenities = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -3917,9 +3950,15 @@ zone_voidframe_zone_SE_amenities = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -3991,9 +4030,15 @@ zone_voidframe_zone_DM_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -4063,9 +4108,15 @@ zone_voidframe_zone_DE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -4135,9 +4186,15 @@ zone_voidframe_zone_PE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -4207,9 +4264,15 @@ zone_voidframe_zone_SE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        #PD
-        building_pd_eludium_floating_resort
-        building_pd_acean_medical_center
+        inline_script = {
+            script = xhk_toggle/xhk_toggled_code
+            code = "
+                #PD
+                building_pd_eludium_floating_resort
+                building_pd_acean_medical_center
+                "
+            toggle = @has_planetary_diversity_unique_worlds
+        }
     }
 
     zone_sets = {
@@ -4242,7 +4305,7 @@ zone_voidframe_zone_DM_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2
@@ -4287,7 +4350,7 @@ zone_voidframe_zone_DE_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2
@@ -4333,7 +4396,7 @@ zone_voidframe_zone_PE_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2
@@ -4378,7 +4441,7 @@ zone_voidframe_zone_SE_negative_mass = {
         building_giga_energy_nexus_1
         building_giga_energy_nexus_2
         building_giga_energy_nexus_3
-        building_giga_planetary_shield_generator_1
+        #building_giga_planetary_shield_generator_1
         building_giga_planetary_shield_generator_2
         building_negative_mass_factory_1
         building_negative_mass_factory_2
@@ -4816,7 +4879,7 @@ zone_voidframe_zone_PE_fortress = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_de_zone
+        script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_stronghold"
         OTHER_REQ = ""
         OTHER_REQ_PLANET = "NOT = { has_deposit = d_frameworld_maginot }"
@@ -5098,7 +5161,7 @@ zone_voidframe_zone_SE_fortress_maginot = {
 
 # MAGINOT GUNS #todo icon
 zone_voidframe_zone_DM_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_DM_maginotarty
+    icon = GFX_anz_voidframe_zone_DM_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_dm
     swap_type_weight = 10
@@ -5143,7 +5206,7 @@ zone_voidframe_zone_DM_maginotarty = {
 
 } #this uses acot jobs for dm and it annoys me
 zone_voidframe_zone_DE_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_DE_maginotarty
+    icon = GFX_anz_voidframe_zone_DE_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_de
     swap_type_weight = 10
@@ -5187,7 +5250,7 @@ zone_voidframe_zone_DE_maginotarty = {
     }
 }
 zone_voidframe_zone_PE_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_PE_maginotarty
+    icon = GFX_anz_voidframe_zone_PE_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_pe
     swap_type_weight = 10
@@ -5231,7 +5294,7 @@ zone_voidframe_zone_PE_maginotarty = {
     }
 }
 zone_voidframe_zone_SE_maginotarty = {
-    #icon = GFX_anz_voidframe_zone_SE_maginotarty
+    icon = GFX_anz_voidframe_zone_SE_ARMY
 
     swap_type = district_giga_voidframe_maginotarty_se
     swap_type_weight = 10
@@ -5277,7 +5340,7 @@ zone_voidframe_zone_SE_maginotarty = {
 
 # MAGINOT SHIELD #todo icon
 zone_voidframe_zone_DM_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_DM_maginotshield
+    icon = GFX_anz_voidframe_zone_DM_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_dm
     swap_type_weight = 10
@@ -5321,7 +5384,7 @@ zone_voidframe_zone_DM_maginotshield = {
     }
 } #this uses acot jobs for dm and it annoys me
 zone_voidframe_zone_DE_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_DE_maginotshield
+    icon = GFX_anz_voidframe_zone_DE_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_de
     swap_type_weight = 10
@@ -5365,7 +5428,7 @@ zone_voidframe_zone_DE_maginotshield = {
     }
 }
 zone_voidframe_zone_PE_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_PE_maginotshield
+    icon = GFX_anz_voidframe_zone_PE_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_pe
     swap_type_weight = 10
@@ -5409,7 +5472,7 @@ zone_voidframe_zone_PE_maginotshield = {
     }
 }
 zone_voidframe_zone_SE_maginotshield = {
-    #icon = GFX_anz_voidframe_zone_SE_maginotshield
+    icon = GFX_anz_voidframe_zone_SE_ARMY
 
     swap_type = district_giga_voidframe_maginotshield_se
     swap_type_weight = 10

@@ -1,0 +1,22 @@
+slot_giga_frameworld_amenities = {
+    include = {
+        zone_giga_frameworld_amenities
+        zone_giga_frameworld_amenities_dystopian
+        zone_voidframe_zone_DM_amenities
+        zone_voidframe_zone_DE_amenities
+        zone_voidframe_zone_PE_amenities
+        zone_voidframe_zone_SE_amenities
+        zone_voidframe_zone_DM_amenities_dystopian
+        zone_voidframe_zone_DE_amenities_dystopian
+        zone_voidframe_zone_PE_amenities_dystopian
+        zone_voidframe_zone_SE_amenities_dystopian
+    }
+
+    included_zone_sets = {
+        amenities
+    }
+
+    unlock = { # planet scope
+        always = yes
+    }
+}
