@@ -1,0 +1,17 @@
+﻿l_spanish:
+  # Leo Guardian Defensive Stations
+  voidframe_guardian_upgradable_reminder.title:99 "Precursor Guardian Designs"
+  voidframe_guardian_upgradable_reminder.desc:99 "Utilizing Guardian Defensive Stations allows you to design the stations yourself.\n\nThe stations will upgrade automatically whenever you change the ship design."
+  voidframe_guardian_upgradable_reminder.a:99 "I understand."
+  
+  decision_voidframe_guardian_defensive_station:99 "Precursor Guardian Defensives"
+  decision_voidframe_guardian_defensive_station_desc:99 "With the superior designs of defensive stations acquired from the Database, it is time to phase out our outdated defensive stations."
+  anz_voidframe_guardian_defensive_station_tt_desc:99 "Replace the Defensive Stations of the Frameworld with Precursor Guardians.\n\n§SReminder:§! These will use your designs and need to be updated manually."
+  anz_voidframe_guardian_defensive_station_tt_effect:99 "$anz_voidframe_guardian_defensive_station_tt_desc$"
+  anz_voidframe_guardian_upgrade_fail:99 "Can only upgrade if all Defensive Stations are present. Repair destroyed ones first!"
+  
+  decision_voidframe_guardian_maginot_retrofit_defensive_station:99 "Maginot Precursor Guardian Retrofit"
+  decision_voidframe_guardian_maginot_retrofit_defensive_station_desc:99 "$decision_voidframe_guardian_defensive_station_desc$"
+  anz_voidframe_guardian_defensive_station_maginot_tt_effect:99 "Retrofit the Maginot Defensive Stations of the Frameworld to the superior Guardian design."
+  
+  voidframe_guardian_defensive_station_fleet:99 "Precursor Guardian Defensive Station"
