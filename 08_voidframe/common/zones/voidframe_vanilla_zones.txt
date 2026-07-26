@@ -3694,15 +3694,11 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
         building_ae_sky_dome
         building_phanon_sky_dome
         building_stellarite_sky_dome
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
+
         #PD
         building_pd_eludium_floating_resort
         building_pd_acean_medical_center
-        "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+
 
     }
 
@@ -3779,15 +3775,10 @@ zone_voidframe_zone_DE_amenities = {
         building_ae_sky_dome
         building_phanon_sky_dome
         building_stellarite_sky_dome
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
-                #PD
-                building_pd_eludium_floating_resort
-                building_pd_acean_medical_center
-                "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
 
     }
 
@@ -3865,15 +3856,11 @@ zone_voidframe_zone_PE_amenities = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
-                #PD
-                building_pd_eludium_floating_resort
-                building_pd_acean_medical_center
-                "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+
     }
 
     zone_sets = {
@@ -3950,15 +3937,10 @@ zone_voidframe_zone_SE_amenities = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
-                #PD
-                building_pd_eludium_floating_resort
-                building_pd_acean_medical_center
-                "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+
     }
 
     zone_sets = {
@@ -4030,15 +4012,11 @@ zone_voidframe_zone_DM_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
-                #PD
-                building_pd_eludium_floating_resort
-                building_pd_acean_medical_center
-                "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+
     }
 
     zone_sets = {
@@ -4108,15 +4086,10 @@ zone_voidframe_zone_DE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
-                #PD
-                building_pd_eludium_floating_resort
-                building_pd_acean_medical_center
-                "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+
     }
 
     zone_sets = {
@@ -4186,15 +4159,11 @@ zone_voidframe_zone_PE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
-                #PD
-                building_pd_eludium_floating_resort
-                building_pd_acean_medical_center
-                "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+
     }
 
     zone_sets = {
@@ -4264,15 +4233,10 @@ zone_voidframe_zone_SE_amenities_dystopian = {
         building_phanon_sky_dome
         building_stellarite_sky_dome
 
-        inline_script = {
-            script = xhk_toggle/xhk_toggled_code
-            code = "
-                #PD
-                building_pd_eludium_floating_resort
-                building_pd_acean_medical_center
-                "
-            toggle = @has_planetary_diversity_unique_worlds
-        }
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
     }
 
     zone_sets = {
