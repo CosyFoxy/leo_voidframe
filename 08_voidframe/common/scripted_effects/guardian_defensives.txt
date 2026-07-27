@@ -40,7 +40,7 @@ anz_voidframe_spawn_guardian_defensive_station = {
                 #FIX THIS THROUGH TRIGGERED DECISION COST?
 
                 effect = {
-                    set_disable_at_health = 0
+                    set_disable_at_health = 0.9
                     set_ship_flag = voidframe_guardian_defensive_station
                     set_ship_flag = voidframe_guardian_defensive_station_$ID$
                 }
@@ -163,7 +163,7 @@ anz_voidframe_spawn_maginot_guardian_defensive_station = {
 
 # run on destroyed guardians to set flags and spawn wreckage
 # this = station
-anz_voidframe_guardian_defesnive_station_destroyed = {
+anz_voidframe_guardian_defensive_station_destroyed = {
     anz_voidframe_guardian_defensive_station_id_destroyed = { ID = 1 }
     anz_voidframe_guardian_defensive_station_id_destroyed = { ID = 2 }
     anz_voidframe_guardian_defensive_station_id_destroyed = { ID = 3 }
