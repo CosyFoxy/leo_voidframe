@@ -47,3 +47,100 @@ country_event = {
     }
 }
 
+###############################################################################################################################################
+# Defensive platforms
+###############################################################################################################################################
+
+### defensive station killed
+# This = Ship
+# From = Disabler Ship
+ship_event = {
+    id = anz_voidframe.16
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        has_ship_flag = voidframe_guardian_defensive_station
+    }
+
+    immediate = {
+        anz_voidframe_guardian_defensive_station_destroyed = yes
+    }
+}
+
+### lose system defensive stations in
+# from = system which changed hands
+# fromfrom = new owner
+country_event = {
+    id = anz_voidframe.17
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        from = {
+            has_star_flag = giga_origin_frameworld
+        }
+    }
+
+    immediate = {
+        # kill defensive stations when the system changes hands
+        from = {
+            every_fleet_in_system = {
+                limit = {
+                    has_fleet_flag = voidframe_guardian_defensive_station
+                }
+
+                every_owned_ship = {
+                    anz_voidframe_guardian_defensive_station_destroyed = yes # firing this effectively destroys the station
+                }
+            }
+        }
+    }
+}
+
+### yearly pulse cleanup to check for deleted defensive stations
+# this = country
+country_event = {
+    id = anz_voidframe.18
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        any_system = {
+            has_star_flag = giga_origin_frameworld
+        }
+    }
+
+    immediate = {
+        every_system_within_border = {
+            limit = {
+                has_star_flag = giga_origin_frameworld
+            }
+
+            random_system_planet = {
+                limit = {
+                    giga_is_frame_world = yes
+                }
+
+                save_event_target_as = frameworld
+            }
+
+            anz_voidframe_check_guardian_defensive_station = { PLANET = event_target:frameworld ID = 1 }
+            anz_voidframe_check_guardian_defensive_station = { PLANET = event_target:frameworld ID = 2 }
+            anz_voidframe_check_guardian_defensive_station = { PLANET = event_target:frameworld ID = 3 }
+
+            if = {
+                limit = {
+                    event_target:frameworld = {
+                        has_carrier_flag = frameworld_maginot
+                    }
+                }
+
+                anz_voidframe_check_guardian_defensive_station = { PLANET = event_target:frameworld ID = 4 }
+                anz_voidframe_check_guardian_defensive_station = { PLANET = event_target:frameworld ID = 5 }
+                anz_voidframe_check_guardian_defensive_station = { PLANET = event_target:frameworld ID = 6 }
+            }
+        }
+    }
+}
+

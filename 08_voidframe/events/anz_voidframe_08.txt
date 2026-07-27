@@ -117,7 +117,7 @@ country_event = {
     }
 }
 # unnerfs the vault
-carrier_event = {
+colony_event = {
     id = anz_voidframe.101
     hide_window = yes
     is_triggered_only = yes
