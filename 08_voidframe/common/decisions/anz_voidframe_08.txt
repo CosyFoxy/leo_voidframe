@@ -287,8 +287,10 @@ decision_voidframe_raid_phanon = {
 		}
 	}
 	potential = {
+		is_nomadic = no
+		is_ai = no
+		giga_has_frameworld_origin = yes
 		planet_owner = {
-			is_ai = no
 			has_country_flag = has_vault_within_borders
 			NOT = { has_country_flag = acot_phanon_tech_stage_four_enabled }
 		}
