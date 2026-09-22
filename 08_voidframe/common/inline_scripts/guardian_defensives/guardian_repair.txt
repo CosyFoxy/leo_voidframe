@@ -20,6 +20,7 @@ decision_voidframe_guardian_repair_station_$ID$ = {
     }
 
     effect = {
+        custom_tooltip = giga_frameworld_repair_station_effect
         anz_voidframe_respawn_guardian_defensive_station = { WHO = owner ID = $ID$ }
     }
 
