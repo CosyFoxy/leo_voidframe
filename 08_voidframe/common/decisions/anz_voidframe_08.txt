@@ -409,9 +409,10 @@ frameag_evac = {
 		}
 
 		every_owned_pop_group = {
-			resettle_pop = {
-				pop = THIS
-				planet = event_target:target_frameworld
+			resettle_pop_group = {
+				POP_GROUP = THIS
+				PLANET = event_target:target_frameworld
+				PERCENTAGE = 100
 			}
 		}
 	}
