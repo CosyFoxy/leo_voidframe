@@ -15,3 +15,24 @@
  anz_voidframe_guardian_defensive_station_maginot_tt_effect: "Retrofit the Maginot Defensive Stations of the Frameworld to the superior Guardian design."
 
  voidframe_guardian_defensive_station_fleet: "Precursor Guardian Defensive Station"
+
+ decision_voidframe_guardian_repair_station: "Repair Precursor Guardian Defensive Station"
+ decision_voidframe_guardian_repair_station_desc: "$giga_frameworld_repair_station_desc$"
+
+ decision_voidframe_guardian_repair_station_1: "$decision_voidframe_guardian_repair_station$ 1"
+ decision_voidframe_guardian_repair_station_1_desc: "$giga_frameworld_repair_station_desc$"
+
+ decision_voidframe_guardian_repair_station_2: "$decision_voidframe_guardian_repair_station$ 2"
+ decision_voidframe_guardian_repair_station_2_desc: "$giga_frameworld_repair_station_desc$"
+
+ decision_voidframe_guardian_repair_station_3: "$decision_voidframe_guardian_repair_station$ 3"
+ decision_voidframe_guardian_repair_station_3_desc: "$giga_frameworld_repair_station_desc$"
+
+ decision_voidframe_guardian_repair_station_4: "$decision_voidframe_guardian_repair_station$ 4"
+ decision_voidframe_guardian_repair_station_4_desc: "$giga_frameworld_repair_station_desc$"
+
+ decision_voidframe_guardian_repair_station_5: "$decision_voidframe_guardian_repair_station$ 5"
+ decision_voidframe_guardian_repair_station_5_desc: "$giga_frameworld_repair_station_desc$"
+
+ decision_voidframe_guardian_repair_station_6: "$decision_voidframe_guardian_repair_station$ 6"
+ decision_voidframe_guardian_repair_station_6_desc: "$giga_frameworld_repair_station_desc$"
